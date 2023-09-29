@@ -33,7 +33,7 @@ function Links({ links }) {
 
 export default function Footer() {
   return (
-    <footer className="my-10 dark:bg-slate-800">
+    <footer className="my-10 dark:bg-[#222529]">
       <section className="max-w-screen-xl mx-auto flex flex-col divide-y divide-slate-100 px-4 py-8">
         {/* upper footer section starts */}
         <div className="upper-section grid grid-cols-4 lg:grid-cols-12 gap-4 pb-4">
@@ -44,12 +44,12 @@ export default function Footer() {
                 src="https://eduport.webestica.com/assets/images/logo.svg"
                 alt="Eduport"
                 loading="lazy"
-                className="w-48 h-auto dark:hidden"
+                className="w-36 h-auto dark:hidden"
               />
               <img
                 src="https://eduport.webestica.com/assets/images/logo-light.svg"
                 alt="Logo Light"
-                className="w-48 h-auto hidden dark:block"
+                className="w-36 h-auto hidden dark:block"
               />
             </div>
             <p className="text-slate-400 text-sm font-normal">
@@ -161,7 +161,7 @@ export default function Footer() {
           <ul className="flex space-x-4 text-sm sm:[&>li>a]:text-base [&>li>a]:text-slate-400">
             <li>
               <a>
-                <i class="fa-solid fa-globe fa-fw"></i>
+                <i className="fa-solid fa-globe fa-fw"></i>
                 <select
                   name="smt"
                   id="something"
