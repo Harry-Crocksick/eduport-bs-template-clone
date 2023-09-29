@@ -1,5 +1,19 @@
 import React from "react";
 
+const companyLinks = [
+  "About us",
+  "Contact us",
+  "News and Blogs",
+  "Library",
+  "Career",
+];
+const communityLinks = ["Documentation", "FAQ", "Forum", "Sitemap"];
+const teachingLinks = [
+  "Become a teacher",
+  "How to guide",
+  "Terms & Conditions",
+];
+
 export default function Footer() {
   return (
     <footer className="my-10 dark:bg-slate-800">
@@ -44,7 +58,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/" className="p-2 shadow-md rounded-md">
-                  <i className="fa-brands fa-linkedin-in fa-fw text-blue-400"></i>
+                  <i className="fa-brands fa-linkedin-in fa-fw text-blue-500"></i>
                 </a>
               </li>
             </ul>
@@ -55,22 +69,14 @@ export default function Footer() {
           {/* company section starts */}
           <div className="col-span-full sm:col-span-2">
             <h3 className="text-xl dark:text-white font-semibold">Company</h3>
-            <ul className="mt-6 [&>li>a]:text-slate-400 [&>li>a]:text-sm [&>li>a]:font-normal [&>li>a]:leading-loose hover:[&>li>a]:text-cyan-400">
-              <li>
-                <a href="/">About us</a>
-              </li>
-              <li>
-                <a href="/">Contact us</a>
-              </li>
-              <li>
-                <a href="/">News and Blogs</a>
-              </li>
-              <li>
-                <a href="/">Library</a>
-              </li>
-              <li>
-                <a href="/">Career</a>
-              </li>
+            <ul className="mt-6">
+              {companyLinks.map((link) => (
+                <li key={link}>
+                  <a href="/" className="hyperlink">
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           {/* company section ends */}
@@ -78,19 +84,14 @@ export default function Footer() {
           {/* community section starts */}
           <div className="col-span-full sm:col-span-2">
             <h3 className="text-xl dark:text-white font-semibold">Community</h3>
-            <ul className="mt-6 [&>li>a]:text-slate-400 [&>li>a]:text-sm [&>li>a]:font-normal [&>li>a]:leading-loose hover:[&>li>a]:text-cyan-400">
-              <li>
-                <a href="/">Documentation</a>
-              </li>
-              <li>
-                <a href="/">FAQ</a>
-              </li>
-              <li>
-                <a href="/">Forum</a>
-              </li>
-              <li>
-                <a href="/">Sitemap</a>
-              </li>
+            <ul className="mt-6">
+              {communityLinks.map((link) => (
+                <li key={link}>
+                  <a href="/" className="hyperlink">
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           {/* community section ends */}
@@ -98,16 +99,14 @@ export default function Footer() {
           {/* teaching section starts */}
           <div className="col-span-full sm:col-span-2">
             <h3 className="text-xl dark:text-white font-semibold">Teaching</h3>
-            <ul className="mt-6 [&>li>a]:text-slate-400 [&>li>a]:text-sm [&>li>a]:font-normal [&>li>a]:leading-loose hover:[&>li>a]:text-cyan-400">
-              <li>
-                <a href="/">Become a teacher</a>
-              </li>
-              <li>
-                <a href="/">How to guide</a>
-              </li>
-              <li>
-                <a href="/">Terms & Conditions</a>
-              </li>
+            <ul className="mt-6">
+              {teachingLinks.map((link) => (
+                <li key={link}>
+                  <a href="/" className="hyperlink">
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           {/* teaching section ends */}

@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .hyperlink {
+    @apply text-slate-400 text-sm font-normal leading-loose hover:text-cyan-400;
+  }
+}
