@@ -1,8 +1,9 @@
-import { Footer } from "./components/Index";
+import { Navigation, Footer } from "./components/Index";
 
 function App() {
   return (
     <>
+      <Navigation />
       <Footer />
     </>
   );

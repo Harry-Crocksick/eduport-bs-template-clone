@@ -14,6 +14,23 @@ const teachingLinks = [
   "Terms & Conditions",
 ];
 
+function Links({ links }) {
+  return (
+    <ul className="mt-6">
+      {links.map((link) => (
+        <li key={link}>
+          <a
+            href="/"
+            className="text-slate-400 text-sm font-normal leading-loose hover:text-cyan-400"
+          >
+            {link}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="my-10 dark:bg-slate-800">
@@ -69,45 +86,21 @@ export default function Footer() {
           {/* company section starts */}
           <div className="col-span-full sm:col-span-2">
             <h3 className="text-xl dark:text-white font-semibold">Company</h3>
-            <ul className="mt-6">
-              {companyLinks.map((link) => (
-                <li key={link}>
-                  <a href="/" className="hyperlink">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <Links links={companyLinks} />
           </div>
           {/* company section ends */}
 
           {/* community section starts */}
           <div className="col-span-full sm:col-span-2">
             <h3 className="text-xl dark:text-white font-semibold">Community</h3>
-            <ul className="mt-6">
-              {communityLinks.map((link) => (
-                <li key={link}>
-                  <a href="/" className="hyperlink">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <Links links={communityLinks} />
           </div>
           {/* community section ends */}
 
           {/* teaching section starts */}
           <div className="col-span-full sm:col-span-2">
             <h3 className="text-xl dark:text-white font-semibold">Teaching</h3>
-            <ul className="mt-6">
-              {teachingLinks.map((link) => (
-                <li key={link}>
-                  <a href="/" className="hyperlink">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <Links links={teachingLinks} />
           </div>
           {/* teaching section ends */}
 
@@ -168,8 +161,12 @@ export default function Footer() {
           <ul className="flex space-x-4 text-sm sm:[&>li>a]:text-base [&>li>a]:text-slate-400">
             <li>
               <a>
-                <i></i>
-                <select name="smt" id="something" className="bg-transparent">
+                <i class="fa-solid fa-globe fa-fw"></i>
+                <select
+                  name="smt"
+                  id="something"
+                  className="bg-transparent ml-2"
+                >
                   <option>Language</option>
                   <option value="">English</option>
                   <option value="">German</option>
