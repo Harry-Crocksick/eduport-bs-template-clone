@@ -1,18 +1,8 @@
-import React from "react";
-
-const companyLinks = [
-  "About us",
-  "Contact us",
-  "News and Blogs",
-  "Library",
-  "Career",
-];
-const communityLinks = ["Documentation", "FAQ", "Forum", "Sitemap"];
-const teachingLinks = [
-  "Become a teacher",
-  "How to guide",
-  "Terms & Conditions",
-];
+import {
+  companyLinks,
+  communityLinks,
+  teachingLinks,
+} from "./utils/footerData";
 
 function Links({ links }) {
   return (

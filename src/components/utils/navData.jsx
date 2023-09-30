@@ -107,4 +107,89 @@ const more = [
   },
 ];
 
-export { accounts, pages, demos, categories, navLinks, more };
+const getStarted = [
+  "Market research",
+  "Advertising",
+  "Consumer behavior",
+  "Digital marketing",
+  "Marketing ethics",
+  "Social media marketing",
+  "Public relations",
+  "Advertising",
+  "Decision science",
+  "SEO",
+  "Business marketing",
+];
+
+const degree = [
+  {
+    heading: "Contact management",
+    description:
+      "Speedily say has suitable disposal add boy. On forth doubt miles of child.",
+  },
+  {
+    heading: "Sales pipeline",
+    description:
+      "Speedily say has suitable disposal add boy. On forth doubt miles of child.",
+  },
+  {
+    heading: "Security & Permission",
+    description:
+      "Speedily say has suitable disposal add boy. On forth doubt miles of child.",
+  },
+];
+
+const certificate = [
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+        className="w-12 h-auto"
+      />
+    ),
+    heading: "Google SEO certificate",
+    description: "No prerequisites",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+        className="w-12 h-auto"
+      />
+    ),
+    heading: "Business Development Executive(BDE)",
+    description: "No prerequisites",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+        className="w-12 h-auto"
+      />
+    ),
+    heading: "Facebook social media marketing",
+    description: "No prerequisites",
+  },
+  {
+    icon: (
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+        className="w-14 h-auto"
+      />
+    ),
+    heading: "Creative graphic design",
+    description: "No prerequisites",
+  },
+];
+
+export {
+  accounts,
+  pages,
+  demos,
+  categories,
+  navLinks,
+  more,
+  getStarted,
+  degree,
+  certificate,
+};

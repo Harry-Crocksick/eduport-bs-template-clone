@@ -1,3 +1,4 @@
+import Megamenu from "./Megamenu";
 import {
   navLinks,
   accounts,
@@ -7,9 +8,9 @@ import {
   more,
 } from "./utils/navData";
 
-function Link({ link }) {
+export function Link({ link }) {
   return (
-    <li className="p-2 hover:text-blue-600 hover:bg-sky-400/10 rounded-md">
+    <li className="p-2 hover:text-blue-600 hover:bg-sky-400/10 rounded-md transition-colors duration-300">
       <a href="/" className="text-sm font-medium">
         {link}
       </a>
@@ -17,7 +18,7 @@ function Link({ link }) {
   );
 }
 
-function SubLink({ subLink, index, name }) {
+export function SubLink({ subLink, index, name }) {
   return (
     <>
       <li className="flex items-center justify-between p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md">
@@ -167,7 +168,7 @@ export default function Navigation() {
             <a href="/" className="text-sm font-medium hover:text-blue-500">
               {link} <i className="fa-solid fa-chevron-down fa-xs"></i>
             </a>
-            <Dropdown linkName={link} />
+            {link === "Megamenu" ? <Megamenu /> : <Dropdown linkName={link} />}
           </li>
         ))}
         <li className="group relative text-slate-400 hover:text-blue-500">
