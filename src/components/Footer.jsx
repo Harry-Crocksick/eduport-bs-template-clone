@@ -36,9 +36,9 @@ export default function Footer() {
     <footer className="my-10 dark:bg-[#222529]">
       <section className="max-w-screen-xl mx-auto flex flex-col divide-y divide-slate-100 px-4 py-8">
         {/* upper footer section starts */}
-        <div className="upper-section grid grid-cols-4 lg:grid-cols-12 gap-4 pb-4">
+        <div className="grid grid-cols-4 lg:grid-cols-12 gap-4 pb-4">
           {/* footer logo section starts */}
-          <div className="footer-logo-section col-span-full lg:col-span-3 flex flex-col space-y-4">
+          <div className="col-span-full lg:col-span-3 flex flex-col space-y-4">
             <div className="shrink-0">
               <img
                 src="https://eduport.webestica.com/assets/images/logo.svg"
@@ -143,7 +143,7 @@ export default function Footer() {
           {/* contact section ends */}
         </div>
         {/* upper footer section ends */}
-        <div className="lower-section pt-4 flex gap-4 flex-col md:flex-row justify-between">
+        <div className="pt-4 flex gap-4 flex-col md:flex-row justify-between">
           <p className="text-slate-400">
             Copyrights &copy;{new Date().getFullYear()}{" "}
             <a

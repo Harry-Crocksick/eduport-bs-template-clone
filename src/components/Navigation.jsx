@@ -1,4 +1,123 @@
-const navLinks = ["Demos", "Pages", "Accounts", "Megamenu"];
+import {
+  navLinks,
+  accounts,
+  demos,
+  categories,
+  pages,
+  more,
+} from "./utils/navData";
+
+function Link({ link }) {
+  return (
+    <li className="p-2 hover:text-blue-600 hover:bg-sky-400/10 rounded-md">
+      <a href="/" className="text-sm font-medium">
+        {link}
+      </a>
+    </li>
+  );
+}
+
+function SubLink({ subLink, index, name }) {
+  return (
+    <>
+      <li className="flex items-center justify-between p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md">
+        <div>
+          {subLink.icon && <span>{subLink.icon}</span>}
+          <a href="/" className="ml-2 text-sm font-medium">
+            {subLink.title}
+          </a>
+          {subLink.title === "Event Detail" && (
+            <span className="bg-emerald-300/30 p-1 ml-2 rounded-sm text-emerald-500 text-sm font-medium">
+              New
+            </span>
+          )}
+        </div>
+        {subLink.kebab && <span>{subLink.kebab}</span>}
+      </li>
+      {name === "Accounts" && index % 3 === 0 && (
+        <li className="p-2">
+          <div className="bg-slate-100 h-0.5 w-full"></div>
+        </li>
+      )}
+      {name === "More" && index % 2 === 0 && index !== more.length && (
+        <li className="p-2">
+          <div className="bg-slate-100 h-0.5 w-full"></div>
+        </li>
+      )}
+      {name === "Category" && index === categories.length && (
+        <>
+          <li className="p-2">
+            <div className="bg-slate-100 h-0.5 w-full"></div>
+          </li>
+          <li className="p-2 text-blue-600 bg-sky-400/10 rounded-md">
+            <a href="/" className="ml-2 text-sm font-medium">
+              View all categories
+            </a>
+          </li>
+        </>
+      )}
+    </>
+  );
+}
+
+export function Dropdown({ linkName }) {
+  let dropdown = null;
+  switch (linkName) {
+    case "Category": {
+      dropdown = categories.map((link, idx) => (
+        <SubLink
+          key={link.title}
+          subLink={link}
+          index={idx + 1}
+          name={"Category"}
+        />
+      ));
+      break;
+    }
+    case "Demos": {
+      dropdown = demos.map((link) => <Link key={link} link={link} />);
+      break;
+    }
+    case "Pages": {
+      dropdown = pages.map((link, idx) => (
+        <SubLink
+          key={link.title}
+          subLink={link}
+          index={idx + 1}
+          name={"Pages"}
+        />
+      ));
+      break;
+    }
+    case "Accounts": {
+      dropdown = accounts.map((link, idx) => (
+        <SubLink
+          key={link.title}
+          subLink={link}
+          index={idx + 1}
+          name={"Accounts"}
+        />
+      ));
+      break;
+    }
+    case "More": {
+      dropdown = more.map((link, idx) => (
+        <SubLink
+          key={link.title}
+          subLink={link}
+          index={idx + 1}
+          name={"More"}
+        />
+      ));
+      break;
+    }
+  }
+  return (
+    <ul className="hidden group-hover:block absolute top-full bg-white px-2 py-3 rounded-md ring-1 ring-slate-900/5 shadow-lg w-64 dark:bg-[#222] z-10">
+      {dropdown}
+    </ul>
+  );
+}
 
 export default function Navigation() {
   return (
@@ -19,7 +138,7 @@ export default function Navigation() {
         </div>
         <a
           href="/"
-          className="py-2 px-3 hidden lg:inline-flex lg:items-center lg:space-x-1 font-medium text-blue-600 bg-sky-400/10 rounded-md"
+          className="relative group py-2 px-3 hidden lg:inline-flex lg:items-center lg:space-x-1 font-medium text-blue-600 bg-sky-400/10 rounded-md"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -36,20 +155,26 @@ export default function Navigation() {
             />
           </svg>{" "}
           <span>Category</span>
+          <Dropdown linkName={"Category"} />
         </a>
       </div>
       <ul className="hidden lg:flex lg:flex-nowrap lg:items-center lg:space-x-8 lg:justify-between">
         {navLinks.map((link) => (
-          <li key={link} className="[&>*]:align-middle text-slate-400">
+          <li
+            key={link}
+            className="group relative [&>*]:align-middle text-slate-400"
+          >
             <a href="/" className="text-sm font-medium hover:text-blue-500">
               {link} <i className="fa-solid fa-chevron-down fa-xs"></i>
             </a>
+            <Dropdown linkName={link} />
           </li>
         ))}
-        <li className="text-slate-400 hover:text-blue-500">
+        <li className="group relative text-slate-400 hover:text-blue-500">
           <a href="/">
             <i className="fa-solid fa-ellipsis"></i>
           </a>
+          <Dropdown linkName={"More"} />
         </li>
       </ul>
       <div className="flex items-center space-x-4">
