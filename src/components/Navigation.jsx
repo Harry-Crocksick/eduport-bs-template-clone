@@ -7,14 +7,16 @@ import {
   categories,
   pages,
   more,
+  devSub,
 } from "./utils/navData";
 
 export function Link({ link }) {
   return (
-    <li className="p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md transition-colors duration-300">
+    <li className="p-2 flex items-center justify-between text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md transition-colors duration-300">
       <a href="/" className="text-sm font-medium">
-        {link}
+        {link.title}
       </a>
+      {link.kebab && <span>{link.kebab}</span>}
     </li>
   );
 }
@@ -34,10 +36,17 @@ export function SubLink({ subLink, index, name }) {
             </span>
           )}
         </div>
+        {subLink.kebab && <span>{subLink.kebab}</span>}
+        {name === "Category" && subLink.title === "Development" ? (
+          <nav className="hidden group-hover/market:block w-64 px-2 py-3 pl-4 absolute top-0 left-full bg-white shadow-lg rounded-md ring-1 ring-slate-900/5">
+            {devSub.map((link, idx) => (
+              <Link key={idx} link={link} />
+            ))}
+          </nav>
+        ) : null}
         {name === "Category" && subLink.title === "Marketing" ? (
           <MarketingMegamenu />
         ) : null}
-        {subLink.kebab && <span>{subLink.kebab}</span>}
       </li>
       {name === "Accounts" && index % 3 === 0 && (
         <li className="p-2">
@@ -68,49 +77,29 @@ export function Dropdown({ linkName }) {
   switch (linkName) {
     case "Category": {
       dropdown = categories.map((link, idx) => (
-        <SubLink
-          key={link.title}
-          subLink={link}
-          index={idx + 1}
-          name={"Category"}
-        />
+        <SubLink key={idx} subLink={link} index={idx + 1} name={"Category"} />
       ));
       break;
     }
     case "Demos": {
-      dropdown = demos.map((link) => <Link key={link} link={link} />);
+      dropdown = demos.map((link, idx) => <Link key={idx} link={link} />);
       break;
     }
     case "Pages": {
       dropdown = pages.map((link, idx) => (
-        <SubLink
-          key={link.title}
-          subLink={link}
-          index={idx + 1}
-          name={"Pages"}
-        />
+        <SubLink key={idx} subLink={link} index={idx + 1} name={"Pages"} />
       ));
       break;
     }
     case "Accounts": {
       dropdown = accounts.map((link, idx) => (
-        <SubLink
-          key={link.title}
-          subLink={link}
-          index={idx + 1}
-          name={"Accounts"}
-        />
+        <SubLink key={idx} subLink={link} index={idx + 1} name={"Accounts"} />
       ));
       break;
     }
     case "More": {
       dropdown = more.map((link, idx) => (
-        <SubLink
-          key={link.title}
-          subLink={link}
-          index={idx + 1}
-          name={"More"}
-        />
+        <SubLink key={idx} subLink={link} index={idx + 1} name={"More"} />
       ));
       break;
     }

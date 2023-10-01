@@ -16,17 +16,17 @@ const categories = [
   { title: "Math & Logic" },
 ];
 const demos = [
-  "Home Default",
-  "Home Education",
-  "Home Academy",
-  "Home Course",
-  "Home University",
-  "Home Kindergarten",
-  "Home Landing",
-  "Home Tutor",
-  "Home School",
-  "Home Abroad",
-  "Home Workshop",
+  { title: "Home Default" },
+  { title: "Home Education" },
+  { title: "Home Academy" },
+  { title: "Home Course" },
+  { title: "Home University" },
+  { title: "Home Kindergarten" },
+  { title: "Home Landing" },
+  { title: "Home Tutor" },
+  { title: "Home School" },
+  { title: "Home Abroad" },
+  { title: "Home Workshop" },
 ];
 const pages = [
   { title: "Course", kebab: <i className="fa-solid fa-ellipsis fa-fw"></i> },
@@ -108,17 +108,17 @@ const more = [
 ];
 
 const getStarted = [
-  "Market research",
-  "Advertising",
-  "Consumer behavior",
-  "Digital marketing",
-  "Marketing ethics",
-  "Social media marketing",
-  "Public relations",
-  "Advertising",
-  "Decision science",
-  "SEO",
-  "Business marketing",
+  { title: "Market research" },
+  { title: "Advertising" },
+  { title: "Consumer behavior" },
+  { title: "Digital marketing" },
+  { title: "Marketing ethics" },
+  { title: "Social media marketing" },
+  { title: "Public relations" },
+  { title: "Advertising" },
+  { title: "Decision science" },
+  { title: "SEO" },
+  { title: "Business marketing" },
 ];
 
 const degree = [
