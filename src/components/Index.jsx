@@ -1,4 +1,5 @@
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+import Hero from "./Hero";
 
-export { Footer, Navigation };
+export { Footer, Hero, Navigation };

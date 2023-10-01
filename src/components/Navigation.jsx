@@ -25,7 +25,7 @@ export function SubLink({ subLink, index, name }) {
   return (
     <>
       <li className="relative flex items-center justify-between p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md group/market">
-        <div>
+        <a href="/">
           {subLink.icon && <span>{subLink.icon}</span>}
           <span className="inline-block ml-2 text-sm font-medium">
             {subLink.title}
@@ -35,10 +35,10 @@ export function SubLink({ subLink, index, name }) {
               New
             </span>
           )}
-        </div>
+        </a>
         {subLink.kebab && <span>{subLink.kebab}</span>}
         {name === "Category" && subLink.title === "Development" ? (
-          <nav className="hidden group-hover/market:block w-64 px-2 py-3 pl-4 absolute top-0 left-full bg-white shadow-lg rounded-md ring-1 ring-slate-900/5">
+          <nav className="hidden group-hover/market:block w-64 px-2 py-3 pl-4 absolute top-0 left-full bg-white shadow-lg rounded-md dark:bg-[#222] ring-1 ring-slate-900/5">
             {devSub.map((link, idx) => (
               <Link key={idx} link={link} />
             ))}
