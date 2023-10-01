@@ -141,44 +141,65 @@ const degree = [
 
 const certificate = [
   {
-    icon: (
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-        className="w-12 h-auto"
-      />
-    ),
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg",
     heading: "Google SEO certificate",
     description: "No prerequisites",
   },
   {
-    icon: (
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-        className="w-12 h-auto"
-      />
-    ),
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
     heading: "Business Development Executive(BDE)",
     description: "No prerequisites",
   },
   {
-    icon: (
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
-        className="w-12 h-auto"
-      />
-    ),
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg",
     heading: "Facebook social media marketing",
     description: "No prerequisites",
   },
   {
-    icon: (
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
-        className="w-14 h-auto"
-      />
-    ),
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
     heading: "Creative graphic design",
     description: "No prerequisites",
+  },
+];
+
+const devSub = [
+  {
+    title: "Web Development",
+    kebab: <i className="fa-solid fa-ellipsis fa-fw"></i>,
+  },
+  { title: "Data Science" },
+  { title: "Mobile Development" },
+  { title: "Programming Language" },
+  { title: "Software Testing" },
+  { title: "Software Engineering" },
+  { title: "Software Testing Tools" },
+];
+
+const marketingDegree = [
+  {
+    icon: "https://eduport.webestica.com/assets/images/client/uni-logo-01.svg",
+    heading: "American Century University, New Mexico",
+    description: "Bachelor of computer science",
+  },
+  {
+    icon: "https://eduport.webestica.com/assets/images/client/uni-logo-02.svg",
+    heading: "Indiana College of - Bloomington",
+    description: "Masters of computer science",
+  },
+  {
+    icon: "https://eduport.webestica.com/assets/images/client/uni-logo-03.svg",
+    heading: "College of South Florida",
+    description: "Medical science college",
+  },
+  {
+    icon: "https://eduport.webestica.com/assets/images/client/uni-logo-01.svg",
+    heading: "Andeerson College",
+    description: "Bachelor of computer science",
+  },
+  {
+    icon: "https://eduport.webestica.com/assets/images/client/uni-logo-04.svg",
+    heading: "University of South California",
+    description: "Masters of business development",
   },
 ];
 
@@ -192,4 +213,6 @@ export {
   getStarted,
   degree,
   certificate,
+  devSub,
+  marketingDegree,
 };

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .bg-image {
+    background-image: url("https://eduport.webestica.com/assets/images/pattern/05.png");
+    background-color: theme(backgroundColor[slate].800);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

@@ -1,4 +1,5 @@
 import Megamenu from "./Megamenu";
+import MarketingMegamenu from "./MarketingMegamenu";
 import {
   navLinks,
   accounts,
@@ -10,7 +11,7 @@ import {
 
 export function Link({ link }) {
   return (
-    <li className="p-2 hover:text-blue-600 hover:bg-sky-400/10 rounded-md transition-colors duration-300">
+    <li className="p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md transition-colors duration-300">
       <a href="/" className="text-sm font-medium">
         {link}
       </a>
@@ -21,7 +22,7 @@ export function Link({ link }) {
 export function SubLink({ subLink, index, name }) {
   return (
     <>
-      <li className="flex items-center justify-between p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md">
+      <li className="relative flex items-center justify-between p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md group/market">
         <div>
           {subLink.icon && <span>{subLink.icon}</span>}
           <a href="/" className="ml-2 text-sm font-medium">
@@ -33,6 +34,9 @@ export function SubLink({ subLink, index, name }) {
             </span>
           )}
         </div>
+        {name === "Category" && subLink.title === "Marketing" ? (
+          <MarketingMegamenu />
+        ) : null}
         {subLink.kebab && <span>{subLink.kebab}</span>}
       </li>
       {name === "Accounts" && index % 3 === 0 && (

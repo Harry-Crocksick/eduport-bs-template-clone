@@ -1,13 +1,23 @@
 import { getStarted, degree, certificate } from "./utils/navData";
 import { Link } from "./Navigation";
 
-function SubLink({ sublink }) {
+export function SubLink({ sublink }) {
   return (
-    <li className="px-4 py-5 hover:bg-sky-50 rounded-lg transition-colors duration-300">
+    <li className="px-4 py-5 text-slate-400 hover:bg-sky-400/10 rounded-lg transition-colors duration-300">
       <a href="/" className="inline-flex space-x-2 items-center">
-        {sublink.icon && <div className="shrink-0">{sublink.icon}</div>}
+        {sublink.icon && (
+          <div className="shrink-0">
+            {" "}
+            <img
+              src={sublink.icon}
+              alt=""
+              className="w-12 h-auto"
+              loading="lazy"
+            />
+          </div>
+        )}
         <div>
-          <h4 className="font-medium text-black dark:text-white">
+          <h4 className="font-medium text-sm text-black dark:text-white">
             {sublink.heading}
           </h4>
           <p className="text-sm font-medium">{sublink.description}</p>
@@ -19,7 +29,7 @@ function SubLink({ sublink }) {
 
 export default function Megamenu() {
   return (
-    <nav className="hidden group-hover:block absolute top-full -translate-x-1/2 left-1/2 w-[768px] xl:w-[1280px] shadow-lg ring-1 ring-slate-900/5 rounded-lg z-10 bg-white">
+    <nav className="hidden group-hover:block absolute top-full -translate-x-1/2 left-1/2 w-[768px] xl:w-[1280px] shadow-lg ring-1 ring-slate-900/5 rounded-lg z-10 bg-white dark:bg-[#222]">
       <section className="w-full grid gap-6 grid-cols-4 xl:grid-cols-8 p-4">
         {/* Get started starts */}
         <div className="col-span-2">
