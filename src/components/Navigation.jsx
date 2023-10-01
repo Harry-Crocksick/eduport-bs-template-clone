@@ -25,9 +25,9 @@ export function SubLink({ subLink, index, name }) {
       <li className="relative flex items-center justify-between p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md group/market">
         <div>
           {subLink.icon && <span>{subLink.icon}</span>}
-          <a href="/" className="ml-2 text-sm font-medium">
+          <span className="inline-block ml-2 text-sm font-medium">
             {subLink.title}
-          </a>
+          </span>
           {subLink.title === "Event Detail" && (
             <span className="bg-emerald-300/30 p-1 ml-2 rounded-sm text-emerald-500 text-sm font-medium">
               New
@@ -54,10 +54,8 @@ export function SubLink({ subLink, index, name }) {
           <li className="p-2">
             <div className="bg-slate-100 h-0.5 w-full"></div>
           </li>
-          <li className="p-2 text-blue-600 bg-sky-400/10 rounded-md">
-            <a href="/" className="ml-2 text-sm font-medium">
-              View all categories
-            </a>
+          <li className="p-2 pl-4 text-blue-600 bg-sky-400/10 rounded-md text-sm font-medium">
+            View all categories
           </li>
         </>
       )}
@@ -141,7 +139,7 @@ export default function Navigation() {
             className="w-36 h-auto hidden dark:block"
           />
         </div>
-        <a
+        <div
           href="/"
           className="relative group py-2 px-3 hidden lg:inline-flex lg:items-center lg:space-x-1 font-medium text-blue-600 bg-sky-400/10 rounded-md"
         >
@@ -161,7 +159,7 @@ export default function Navigation() {
           </svg>{" "}
           <span>Category</span>
           <Dropdown linkName={"Category"} />
-        </a>
+        </div>
       </div>
       <ul className="hidden lg:flex lg:flex-nowrap lg:items-center lg:space-x-8 lg:justify-between">
         {navLinks.map((link) => (
