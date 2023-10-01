@@ -4,7 +4,7 @@ import { SubLink } from "./Megamenu";
 
 export default function MarketingMegamenu() {
   return (
-    <nav className="w-[650px] xl:w-[992px] group-hover/market:block hidden absolute left-full -top-14 bg-white ring-1 ring-slate-900/5 rounded-lg shadow-lg dark:bg-[#222]">
+    <nav className="w-[650px] xl:w-[992px] group-hover/market:block hidden absolute left-full -top-14 bg-white ring-1 ring-slate-900/5 rounded-lg shadow-lg dark:bg-[#222] overflow-hidden">
       <section className="w-full py-6 px-4 grid grid-cols-4 xl:grid-cols-6 gap-3">
         {/* get started starts */}
         <div className="col-span-2">
