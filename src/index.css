@@ -10,4 +10,11 @@
     background-size: cover;
     background-position: center;
   }
+  .bg-image-pattern {
+    background-image: url("https://eduport.webestica.com/assets/images/pattern/01.png");
+    background-color: theme(backgroundColor[emerald].500);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }

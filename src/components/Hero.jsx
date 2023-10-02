@@ -2,24 +2,24 @@ export default function Hero() {
   return (
     <section className="w-full mt-10">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="flex flex-wrap items-center">
+        <div className="flex flex-wrap gap-y-28 items-center">
           {/* left section starts */}
-          <div className="relative basis-full md:basis-[41.66%] xl:basis-1/2 pr-4">
+          <div className="relative text-center basis-full md:text-left mdx:basis-[41.66%] xl:basis-1/2 pr-4">
             <figure className="fill-emerald-500 absolute right-60 -top-4">
               <svg width="22px" height="21px">
                 <path d="M10.717,4.757 L14.440,-0.001 L14.215,6.023 L20.142,4.757 L16.076,9.228 L21.435,12.046 L15.430,12.873 L17.713,18.457 L12.579,15.252 L10.717,20.988 L8.856,15.252 L3.722,18.457 L6.005,12.873 L-0.000,12.046 L5.359,9.228 L1.292,4.757 L7.220,6.023 L6.995,-0.001 L10.717,4.757 Z"></path>
               </svg>
             </figure>
-            <figure className="fill-yellow-400 absolute bottom-5 right-10">
+            <figure className="fill-yellow-400 absolute bottom-5 right-10 -z-10">
               <svg width="42px" height="42px">
                 <path d="M21.000,-0.001 L28.424,13.575 L41.999,20.999 L28.424,28.424 L21.000,41.998 L13.575,28.424 L-0.000,20.999 L13.575,13.575 L21.000,-0.001 Z"></path>
               </svg>
             </figure>
-            <h1 className="text-5xl lg:text-[56px] leading-snug font-semibold dark:text-white">
+            <h1 className="text-4xl mdx:text-5xl lg:text-[56px] leading-snug font-semibold dark:text-white">
               Limitless learning at your{" "}
               <span className="relative">
                 fingertips
-                <span className="absolute inset-0 left-3 -z-10">
+                <span className="absolute inset-0 -z-10">
                   <svg width="300px" height="62.1px" viewBox="0 0 366 62.1">
                     <path
                       className="fill-yellow-400"
@@ -33,7 +33,7 @@ export default function Hero() {
               Online learning and teaching marketplace with 5K+ courses & 10M
               students. Taught by experts to help you acquire new skills.
             </p>
-            <ul className="flex flex-wrap gap-3 items-center mt-3 dark:text-white">
+            <ul className="flex flex-wrap gap-3 justify-center md:justify-start items-center mt-3 dark:text-white">
               <li>
                 <span>
                   <i className="text-emerald-500 fa-solid fa-circle-check fa-fw"></i>
@@ -53,7 +53,7 @@ export default function Hero() {
                 Get membership
               </li>
             </ul>
-            <div className="btn-group mt-8 flex items-center space-x-4">
+            <div className="btn-group mt-8 flex flex-wrap justify-center md:justify-start items-center gap-4">
               <div className="shrink-0">
                 <a
                   href="/"
@@ -88,8 +88,40 @@ export default function Hero() {
           </div>
           {/* left section ends */}
           {/* right sectino starts */}
-          <div className="relative flex-shrink-0 basis-full md:basis-[58.3333%] xl:basis-1/2 text-center">
-            <figure class="absolute top-32 left-1/2 -translate-x-1/2 -z-5">
+          <div className="relative flex-shrink-0 basis-full mdx:basis-[58.3333%] xl:basis-1/2 text-center">
+            <div className="hidden md:block absolute top-32 right-0 p-4 rounded-lg bg-image-pattern">
+              <p className="text-white font-medium mb-2">
+                Our daily new students
+              </p>
+              <div className="flex -space-x-2 items-center">
+                <img
+                  src="https://eduport.webestica.com/assets/images/avatar/01.jpg"
+                  alt=""
+                  className="w-10 h-10 rounded-full border-2 drop-shadow-md border-white"
+                />
+                <img
+                  src="https://eduport.webestica.com/assets/images/avatar/02.jpg"
+                  alt=""
+                  className="w-10 h-10 rounded-full border-2 drop-shadow-md border-white"
+                />
+                <img
+                  src="https://eduport.webestica.com/assets/images/avatar/03.jpg"
+                  alt=""
+                  className="w-10 h-10 rounded-full border-2 drop-shadow-md border-white"
+                />
+                <img
+                  src="https://eduport.webestica.com/assets/images/avatar/05.jpg"
+                  alt=""
+                  className="w-10 h-10 rounded-full border-2 drop-shadow-md border-white"
+                />
+                <img
+                  src="https://eduport.webestica.com/assets/images/avatar/04.jpg"
+                  alt=""
+                  className="w-10 h-10 rounded-full border-2 drop-shadow-md border-white"
+                />
+              </div>
+            </div>
+            <figure className="absolute top-32 left-1/2 -translate-x-1/2 -z-5">
               <svg className="stroke-yellow-600">
                 <path d="m22.3 57.6v0.1c-0.1 0.3 0.1 0.6 0.3 0.7 0.3 0.2 0.7 0.2 1 0.2h1.4c1.3 0.1 2.6 0.1 3.9 0.1 1.2 0 2.4 0 3.7 0.2s2.6 0.1 3.9 0.2c0.8 0.1 0.8-1.2 0-1.3-1.2-0.1-2.5 0-3.7-0.2-1.2-0.1-2.3-0.2-3.4-0.2-1.2 0-2.4 0-3.6-0.1-0.6 0-1.1-0.1-1.7-0.1-0.2 0-0.7 0.1-0.8 0 0.1 0.2 0.2 0.5 0.3 0.7v-0.1c0.2-0.7-1.1-1-1.3-0.2z"></path>
                 <path d="m23.3 57.6c-0.1-0.5-0.2-0.8-0.1-1.3v-1.2-2.9c0-0.4-0.1-0.7-0.2-1.1 0-0.4 0-0.8-0.1-1.1-0.1-0.2-0.3-0.4-0.5-0.6-0.4-0.3-0.7-0.5-1-0.9-1.2-1.3-2.7-2.3-3.8-3.7s-1.8-2.9-2.2-4.6c-0.1-0.5-0.2-1-0.3-1.4s-0.2-0.8-0.2-1.3c0-0.8 0-1.7-0.1-2.5-0.1-0.7-0.3-1.5-0.2-2.3s0.5-1.8 0.9-2.5c0.8-1.5 1.5-3.1 2.6-4.4 0.5-0.6 0.9-1.3 1.5-1.8 0.6-0.6 1.3-1.2 1.9-1.8 0.7-0.5 1.4-1.1 2.2-1.5 0.7-0.3 1.4-0.4 2.1-0.6 0.7-0.1 1.3-0.2 2-0.4 0.9-0.3 1.7-0.6 2.7-0.8 0.9-0.2 1.8-0.1 2.8-0.1 1 0.1 2 0.1 2.9 0.4 0.8 0.2 1.6 0.3 2.3 0.6 0.8 0.3 1.5 0.8 2.2 1.4 1.4 1.2 2.7 2.6 3.8 4.1 0.5 0.7 1.1 1.5 1.5 2.2 0.4 0.8 0.8 1.7 1.2 2.5 0.7 1.7 0.7 3.6 0.7 5.5 0 0.9-0.1 1.8-0.3 2.6l-0.6 2.7c-0.5 1.8-1.7 3.5-3 4.9-0.6 0.7-1.5 1.3-2.3 1.8-0.4 0.3-0.9 0.5-1.3 0.7s-0.7 0.4-1.1 0.6c-0.7 0.2-1.7 0.3-2 1-0.1 0.4-0.1 0.7-0.1 1.1 0 0.5-0.1 1-0.2 1.4-0.1 0.9-0.2 1.9-0.3 2.8-0.1 0.5 0 1 0 1.5 0 0.3 0 0.9-0.1 1.2-0.4 0.7 0.7 1.4 1.1 0.7 0.3-0.5 0.3-1.4 0.3-2.1 0-1 0.1-1.9 0.2-2.9 0.1-0.9 0.3-1.8 0.3-2.7v-0.5c0-0.2-0.1-0.1 0.2-0.1 0.4 0 0.9-0.3 1.3-0.4 1.6-0.7 3.1-1.7 4.4-2.8 0.6-0.5 1.1-1.3 1.7-1.9 0.6-0.7 1-1.6 1.5-2.4 0.4-0.7 0.6-1.5 0.8-2.3 0.2-1 0.5-2 0.7-2.9 0.3-2 0.2-4-0.1-5.9-0.1-0.9-0.4-1.6-0.7-2.4-0.4-0.9-0.8-1.9-1.3-2.7-1-1.7-2.2-3.3-3.6-4.6-1.2-1.2-2.4-2.4-4-3.1-0.8-0.3-1.6-0.4-2.4-0.7-1-0.3-1.9-0.4-3-0.5-1-0.1-2-0.2-3 0-1 0.1-2 0.5-2.9 0.8-1.5 0.5-3 0.5-4.5 1.1-1.6 0.7-2.9 1.9-4.1 3-0.3 0.3-0.6 0.5-0.9 0.8s-0.5 0.7-0.7 1c-0.3 0.4-0.6 0.7-0.9 1-0.3 0.4-0.6 0.8-0.8 1.2-0.5 0.8-0.8 1.6-1.3 2.5-0.4 0.8-0.8 1.6-1.1 2.5-0.2 0.8-0.4 1.5-0.3 2.4s0.2 1.8 0.2 2.7c0 2 0.6 4 1.2 5.9 0.7 1.9 2 3.6 3.5 5 0.8 0.7 1.6 1.4 2.3 2.2l0.5 0.5c0.2 0.1 0.4 0.2 0.5 0.4 0.2 0.2 0.2 0.9 0.2 1.2 0.2 1.1 0.1 2.3 0.1 3.4v1.4c0 0.5 0.1 0.9 0.2 1.4 0.1 0.7 1.3 0.4 1.1-0.4z"></path>
@@ -113,7 +145,7 @@ export default function Hero() {
                 alt="Angular"
               />
             </figure>
-            <figure className="absolute top-44 p-3 rounded-md bg-white shadow-xl max-w-max">
+            <figure className="hidden sm:block absolute top-44 p-3 rounded-md bg-white shadow-xl max-w-max">
               <img
                 src="https://eduport.webestica.com/assets/images/client/science.svg"
                 alt="Atom"
@@ -125,7 +157,7 @@ export default function Hero() {
                 alt="Figma"
               />
             </figure>
-            <figure className="absolute top-[66px] left-1/2 -translate-x-1/2 -z-10">
+            <figure className="absolute bottom-0 left-1/2 -translate-x-1/2 -z-10">
               <svg width="550px" height="538px" viewBox="0 0 554 544">
                 <path
                   className="fill-yellow-400"
@@ -133,14 +165,14 @@ export default function Hero() {
                 ></path>
               </svg>
             </figure>
-            <div className="shrink-0 z-[9999]">
+            <div className="relative z-[20]">
               <img
                 src="https://eduport.webestica.com/assets/images/element/07.png"
                 alt="Model"
                 className="mx-auto pointer-events-none"
               />
             </div>
-            <div className="absolute left-16 bottom-14 flex justify-center items-center px-3 py-4 backdrop-blur-sm shadow-lg border border-white rounded-md">
+            <div className="hidden absolute left-16 bottom-14 mdx:flex justify-center items-center px-3 py-4 backdrop-blur-sm shadow-lg border border-white rounded-md z-50">
               <div className="flex items-center space-x-2">
                 <span className="bg-yellow-300 rounded-full p-3">
                   <i className="fas fa-envelope fa-fw fa-lg text-white"></i>
