@@ -1,30 +1,30 @@
 import Megamenu from "./Megamenu";
 import MarketingMegamenu from "./MarketingMegamenu";
 import {
-  navLinks,
-  accounts,
-  demos,
-  categories,
-  pages,
-  more,
-  devSub,
+    navLinks,
+    accounts,
+    demos,
+    categories,
+    pages,
+    more,
+    devSub,
 } from "./utils/navData";
 
 export function Link({ link }) {
-  return (
-    <li className="p-2 flex items-center justify-between text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md transition-colors duration-300">
+    return (
+        <li className="p-2 flex items-center justify-between text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md transition-colors duration-300">
       <a href="/" className="text-sm font-medium">
         {link.title}
       </a>
       {link.kebab && <span>{link.kebab}</span>}
     </li>
-  );
+    );
 }
 
 export function SubLink({ subLink, index, name }) {
-  return (
-    <>
-      <li className="relative flex items-center justify-between p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md group/market">
+    return ( <
+        >
+        <li className="relative flex items-center justify-between p-2 text-slate-400 hover:text-blue-600 hover:bg-sky-400/10 rounded-md group/market">
         <a href="/">
           {subLink.icon && <span>{subLink.icon}</span>}
           <span className="inline-block ml-2 text-sm font-medium">
@@ -47,73 +47,80 @@ export function SubLink({ subLink, index, name }) {
         {name === "Category" && subLink.title === "Marketing" ? (
           <MarketingMegamenu />
         ) : null}
-      </li>
-      {name === "Accounts" && index % 3 === 0 && (
-        <li className="p-2">
+      </li> {
+            name === "Accounts" && index % 3 === 0 && (
+                <li className="p-2">
           <div className="bg-slate-100 h-0.5 w-full"></div>
         </li>
-      )}
-      {name === "More" && index % 2 === 0 && index !== more.length && (
-        <li className="p-2">
+            )
+        } {
+            name === "More" && index % 2 === 0 && index !== more.length && (
+                <li className="p-2">
           <div className="bg-slate-100 h-0.5 w-full"></div>
         </li>
-      )}
-      {name === "Category" && index === categories.length && (
-        <>
-          <li className="p-2">
+            )
+        } {
+            name === "Category" && index === categories.length && ( <
+                >
+                <li className="p-2">
             <div className="bg-slate-100 h-0.5 w-full"></div>
-          </li>
-          <li className="p-2 pl-4 text-blue-600 bg-sky-400/10 rounded-md text-sm font-medium">
-            View all categories
-          </li>
-        </>
-      )}
-    </>
-  );
+          </li> <
+                li className = "p-2 pl-4 text-blue-600 bg-sky-400/10 rounded-md text-sm font-medium" >
+                View all categories <
+                /li> < / >
+            )
+        } <
+        />
+    );
 }
 
 export function Dropdown({ linkName }) {
-  let dropdown = null;
-  switch (linkName) {
-    case "Category": {
-      dropdown = categories.map((link, idx) => (
-        <SubLink key={idx} subLink={link} index={idx + 1} name={"Category"} />
-      ));
-      break;
+    let dropdown = null;
+    switch (linkName) {
+        case "Category":
+            {
+                dropdown = categories.map((link, idx) => (
+                    <SubLink key={idx} subLink={link} index={idx + 1} name={"Category"} />
+                ));
+                break;
+            }
+        case "Demos":
+            {
+                dropdown = demos.map((link, idx) => <Link key={idx} link={link} />);
+                break;
+            }
+        case "Pages":
+            {
+                dropdown = pages.map((link, idx) => (
+                    <SubLink key={idx} subLink={link} index={idx + 1} name={"Pages"} />
+                ));
+                break;
+            }
+        case "Accounts":
+            {
+                dropdown = accounts.map((link, idx) => (
+                    <SubLink key={idx} subLink={link} index={idx + 1} name={"Accounts"} />
+                ));
+                break;
+            }
+        case "More":
+            {
+                dropdown = more.map((link, idx) => (
+                    <SubLink key={idx} subLink={link} index={idx + 1} name={"More"} />
+                ));
+                break;
+            }
     }
-    case "Demos": {
-      dropdown = demos.map((link, idx) => <Link key={idx} link={link} />);
-      break;
-    }
-    case "Pages": {
-      dropdown = pages.map((link, idx) => (
-        <SubLink key={idx} subLink={link} index={idx + 1} name={"Pages"} />
-      ));
-      break;
-    }
-    case "Accounts": {
-      dropdown = accounts.map((link, idx) => (
-        <SubLink key={idx} subLink={link} index={idx + 1} name={"Accounts"} />
-      ));
-      break;
-    }
-    case "More": {
-      dropdown = more.map((link, idx) => (
-        <SubLink key={idx} subLink={link} index={idx + 1} name={"More"} />
-      ));
-      break;
-    }
-  }
-  return (
-    <ul className="hidden group-hover:block absolute top-full bg-white px-2 py-3 rounded-md ring-1 ring-slate-900/5 shadow-lg w-64 dark:bg-[#222] z-10">
+    return (
+        <ul className="hidden group-hover:block absolute top-full bg-white px-2 py-3 rounded-md ring-1 ring-slate-900/5 shadow-lg w-64 dark:bg-[#222] z-10">
       {dropdown}
     </ul>
-  );
+    );
 }
 
 export default function Navigation() {
-  return (
-    <nav className="flex justify-between items-center py-5 px-4 md:px-10 dark:bg-[#222529]">
+    return (
+        <nav className="flex justify-between items-center py-5 px-4 md:px-10 dark:bg-[#222529]">
       <div className="flex items-center space-x-4">
         <div className="shrink-0">
           <img
@@ -176,7 +183,7 @@ export default function Navigation() {
             name="text"
             id="text"
             placeholder="Search"
-            className="block w-full ring-1 ring-slate-200 py-2 px-3 focus:ring-blue-400 outline-none rounded-md"
+            className="block w-full ring-1 ring-slate-100 dark:ring-1 dark:ring-slate-100/20 py-2 px-3 focus:ring-2 focus:ring-blue-400 outline-none rounded-md dark:bg-[#222]"
           />
           <span className="absolute top-1/2 -translate-y-1/2 right-2">
             <i className="fa-solid fa-magnifying-glass fa-fw text-slate-400"></i>
@@ -194,5 +201,5 @@ export default function Navigation() {
         </div>
       </div>
     </nav>
-  );
+    );
 }
