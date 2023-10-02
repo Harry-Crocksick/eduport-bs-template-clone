@@ -1,11 +1,12 @@
-import { Navigation, Hero, Footer } from "./components/Index";
+import { Navigation, Hero, Accomplishment, Footer } from "./components/Index";
 
 function App() {
   return (
     <>
       <Navigation />
       <Hero />
-      {/* <Footer /> */}
+      <Accomplishment />
+      <Footer />
     </>
   );
 }
