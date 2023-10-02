@@ -29,7 +29,7 @@ export function SubLink({ sublink }) {
 
 export default function Megamenu() {
   return (
-    <nav className="hidden group-hover:block absolute top-full -translate-x-1/2 left-1/2 w-[768px] 2xl:w-[1280px] shadow-lg ring-1 ring-slate-900/5 rounded-lg z-10 bg-white dark:bg-[#222]">
+    <nav className="hidden group-hover:block absolute top-full -translate-x-1/2 left-1/2 w-[768px] 2xl:w-[1280px] shadow-lg ring-1 ring-slate-900/5 rounded-lg z-[9999] bg-white dark:bg-[#222]">
       <section className="w-full grid gap-6 grid-cols-4 2xl:grid-cols-8 p-4">
         {/* Get started starts */}
         <div className="col-span-2">

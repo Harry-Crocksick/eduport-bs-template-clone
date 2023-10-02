@@ -165,14 +165,14 @@ export default function Hero() {
                 ></path>
               </svg>
             </figure>
-            <div className="relative z-[20]">
+            <div className="z-[10]">
               <img
                 src="https://eduport.webestica.com/assets/images/element/07.png"
                 alt="Model"
                 className="mx-auto pointer-events-none"
               />
             </div>
-            <div className="hidden absolute left-16 bottom-14 mdx:flex justify-center items-center px-3 py-4 backdrop-blur-sm shadow-lg border border-white rounded-md z-50">
+            <div className="hidden absolute left-16 bottom-14 mdx:flex justify-center items-center px-3 py-4 backdrop-blur-sm shadow-lg border border-white rounded-md z-0">
               <div className="flex items-center space-x-2">
                 <span className="bg-yellow-300 rounded-full p-3">
                   <i className="fas fa-envelope fa-fw fa-lg text-white"></i>
