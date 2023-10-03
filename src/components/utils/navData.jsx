@@ -282,7 +282,7 @@ const popularCourses = [
     title: "Learn Invision",
     description:
       "Arrived off she elderly beloved him Course regard to up he hardly.",
-    rating: 3.0,
+    rating: 4.0,
     duration: "6h 56m",
     lectures: "82 lectures",
     tags: ["Web Design", "Graphic Design", "Finance"],
