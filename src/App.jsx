@@ -1,4 +1,11 @@
-import { Navigation, Hero, Accomplishment, Footer } from "./components/Index";
+import {
+  Navigation,
+  Hero,
+  Accomplishment,
+  Courses,
+  Invitation,
+  Footer,
+} from "./components/Index";
 
 function App() {
   return (
@@ -6,6 +13,8 @@ function App() {
       <Navigation />
       <Hero />
       <Accomplishment />
+      <Courses />
+      <Invitation />
       <Footer />
     </>
   );
