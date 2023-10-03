@@ -51,7 +51,8 @@ export default function Courses() {
               key={course.title}
               className="card-container col-span-full sm:col-span-2 px-4 min-h-full"
             >
-              <div className="card h-full rounded-lg dark:shadow-none shadow-2xl overflow-hidden">
+              <div className="card flex flex-col h-full rounded-lg dark:shadow-none shadow-2xl overflow-hidden">
+                {/* image section starts */}
                 <div className="shrink-0">
                   <img
                     src={course.thumbnail}
@@ -59,7 +60,9 @@ export default function Courses() {
                     loading="lazy"
                   />
                 </div>
-                <div className="content-container flex flex-col p-4 bg-white dark:bg-[#222] h-full">
+                {/* image section ends */}
+                {/* context section starts */}
+                <div className="content-container p-4 flex-auto bg-white dark:bg-[#222]">
                   <div className="flex items-center justify-between">
                     <span
                       className={
@@ -108,22 +111,25 @@ export default function Courses() {
                     )}
                     <span className="dark:text-white">{course.rating}/5.0</span>
                   </ul>
-                  <hr className="my-4" />
-                  <div className="flex items-center justify-between dark:text-white">
-                    <div className="flex items-center space-x-2">
-                      <span>
-                        <i className="fa-regular fa-clock fa-fw fa-md text-rose-500"></i>
-                      </span>
-                      <span>{course.duration}</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <span>
-                        <i className="fa-solid fa-table fa-fw fa-md text-orange-400"></i>
-                      </span>
-                      <span>{course.lectures}</span>
-                    </div>
+                </div>
+                {/* context section ends */}
+                <hr className="mx-4" />
+                {/* footer section starts */}
+                <div className="flex items-center justify-between px-4 py-2 dark:text-white dark:bg-[#222]">
+                  <div className="flex items-center space-x-2">
+                    <span>
+                      <i className="fa-regular fa-clock fa-fw fa-md text-rose-500"></i>
+                    </span>
+                    <span>{course.duration}</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span>
+                      <i className="fa-solid fa-table fa-fw fa-md text-orange-400"></i>
+                    </span>
+                    <span>{course.lectures}</span>
                   </div>
                 </div>
+                {/* footer section ends */}
               </div>
             </div>
           ))}
