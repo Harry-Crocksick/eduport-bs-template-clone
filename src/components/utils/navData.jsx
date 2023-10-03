@@ -203,6 +203,96 @@ const marketingDegree = [
   },
 ];
 
+const popularCourses = [
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/08.jpg",
+    difficulty: "All level",
+    title: "Sketch from A to Z: for app designer",
+    description: "Proposal indulged no do sociable he throwing settling.",
+    rating: 4.0,
+    duration: "12h 56m",
+    lectures: "15 lectures",
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/02.jpg",
+    difficulty: "Beginner",
+    title: "Graphic Designer Masterclass",
+    description:
+      "Rooms oh fully taken by worse do Points afraid but may end Rooms...",
+    rating: 4.5,
+    duration: "9h 56m",
+    lectures: "65 lectures",
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/03.jpg",
+    difficulty: "Beginner",
+    title: "Create a Design System in Figma",
+    description:
+      "Rooms oh fully taken by worse do. Points afraid but may end afraid but...",
+    rating: 4.5,
+    duration: "5h 56m",
+    lectures: "32 lectures",
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/07.jpg",
+    difficulty: "Beginner",
+    title: "Deep Learning with React-Native",
+    description:
+      "Far advanced settling say finished raillery. Offered chiefly farther",
+    rating: 4.0,
+    duration: "18h 56m",
+    lectures: "99 lectures",
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/11.jpg",
+    difficulty: "All level",
+    title: "Build Responsive Websites with HTML",
+    description:
+      "Far advanced settling say finished raillery. Offered chiefly farther",
+    rating: 4.0,
+    duration: "15h 30m",
+    lectures: "68 lectures",
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/12.jpg",
+    difficulty: "Beginner",
+    title: "Build Websites with CSS",
+    description:
+      "Far advanced settling say finished raillery. Offered chiefly farther",
+    rating: 4.5,
+    duration: "36h 30m",
+    lectures: "72 lectures",
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/04.jpg",
+    difficulty: "All level",
+    title: "Learn Invision",
+    description:
+      "Arrived off she elderly beloved him Course regard to up he hardly.",
+    rating: 3.0,
+    duration: "6h 56m",
+    lectures: "82 lectures",
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/09.jpg",
+    difficulty: "All level",
+    title: "JavaScript: Full Understanding",
+    description:
+      "Far advanced settling say finished raillery. Offered chiefly farther.",
+    rating: 5.0,
+    duration: "35h 56m",
+    lectures: "89 lectures",
+  },
+];
+
 export {
   accounts,
   pages,
@@ -215,4 +305,5 @@ export {
   certificate,
   devSub,
   marketingDegree,
+  popularCourses,
 };
