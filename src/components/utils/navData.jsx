@@ -213,6 +213,7 @@ const popularCourses = [
     rating: 4.0,
     duration: "12h 56m",
     lectures: "15 lectures",
+    tags: ["Web Design", "Graphic Design", "Marketing"],
   },
   {
     thumbnail:
@@ -224,6 +225,7 @@ const popularCourses = [
     rating: 4.5,
     duration: "9h 56m",
     lectures: "65 lectures",
+    tags: ["Web Design", "Graphic Design"],
   },
   {
     thumbnail:
@@ -235,6 +237,7 @@ const popularCourses = [
     rating: 4.5,
     duration: "5h 56m",
     lectures: "32 lectures",
+    tags: ["Web Design", "Graphic Design"],
   },
   {
     thumbnail:
@@ -246,6 +249,7 @@ const popularCourses = [
     rating: 4.0,
     duration: "18h 56m",
     lectures: "99 lectures",
+    tags: ["Web Design", "Development"],
   },
   {
     thumbnail:
@@ -257,6 +261,7 @@ const popularCourses = [
     rating: 4.0,
     duration: "15h 30m",
     lectures: "68 lectures",
+    tags: ["Web Design"],
   },
   {
     thumbnail:
@@ -268,6 +273,7 @@ const popularCourses = [
     rating: 4.5,
     duration: "36h 30m",
     lectures: "72 lectures",
+    tags: ["Web Design"],
   },
   {
     thumbnail:
@@ -279,6 +285,7 @@ const popularCourses = [
     rating: 3.0,
     duration: "6h 56m",
     lectures: "82 lectures",
+    tags: ["Web Design", "Graphic Design", "Finance"],
   },
   {
     thumbnail:
@@ -290,6 +297,64 @@ const popularCourses = [
     rating: 5.0,
     duration: "35h 56m",
     lectures: "89 lectures",
+    tags: ["Web Design", "Development", "Finance"],
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/06.jpg",
+    difficulty: "Intermediate",
+    title: "Angular - The Complete Guider",
+    description: "Rooms oh fully taken by worse do. Points afraid but may end.",
+    rating: 4.5,
+    duration: "9h 32m",
+    lectures: "42 lectures",
+    tags: ["Development"],
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/05.jpg",
+    difficulty: "Beginner",
+    title: "The Complete Web Development in python",
+    description: "Mention Mr manners opinion if garrets enabled.",
+    rating: 4.5,
+    duration: "10h 00m",
+    lectures: "26 lectures",
+    tags: ["Development"],
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/10.jpg",
+    difficulty: "Intermediate",
+    title: "Bootstrap 5 From Scratch",
+    description:
+      "Far advanced settling say finished raillery. Offered chiefly farther",
+    rating: 4.5,
+    duration: "25h 56m",
+    lectures: "38 lectures",
+    tags: ["Development"],
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/13.jpg",
+    difficulty: "Beginner",
+    title: "PHP with - CMS Project",
+    description:
+      "Far advanced settling say finished raillery. Offered chiefly farther.",
+    rating: 4.0,
+    duration: "21h 22m",
+    lectures: "30 lectures",
+    tags: ["Development"],
+  },
+  {
+    thumbnail:
+      "https://eduport.webestica.com/assets/images/courses/4by3/01.jpg",
+    difficulty: "Beginner",
+    title: "Digital Marketing Masterclass",
+    description: "Delivered dejection necessary objection do Mr prevailed.",
+    rating: 5.0,
+    duration: "6h 56m",
+    lectures: "82 lectures",
+    tags: ["Marketing"],
   },
 ];
 

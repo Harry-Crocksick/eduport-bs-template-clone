@@ -12,6 +12,11 @@ const navLinks = [
 export default function Courses() {
   const [active, isActive] = useState(navLinks[0]);
 
+  // To filter out courses depends on active
+  const coursesToDisplay = popularCourses.filter((course) =>
+    course.tags.includes(active)
+  );
+
   return (
     <section className="w-full mt-20">
       <div className="max-w-screen-xl mx-auto">
@@ -41,7 +46,7 @@ export default function Courses() {
           ))}
         </ul>
         <div className="big-container mt-5 grid grid-cols-4 lg:grid-cols-8 gap-y-8">
-          {popularCourses.map((course, idx) => (
+          {coursesToDisplay.map((course, idx) => (
             <div
               key={course.title}
               className="card-container col-span-full sm:col-span-2 px-4 min-h-full"
@@ -59,8 +64,10 @@ export default function Courses() {
                     <span
                       className={
                         course.difficulty === "Beginner"
-                          ? "bg-emerald-500/10 text-emerald-500 text-sm px-2 py-1 rounded-sm"
-                          : "bg-indigo-500/10 text-indigo-500 text-sm px-2 py-1 rounded-sm"
+                          ? "bg-emerald-500/10 text-emerald-500 text-sm px-2 py-0.5 rounded-sm"
+                          : course.difficulty === "All level"
+                          ? "bg-indigo-500/10 text-indigo-500 text-sm px-2 py-0.5 rounded-sm"
+                          : "bg-cyan-500/10 text-cyan-500 text-sm px-2 py-1 rounded-sm"
                       }
                     >
                       {course.difficulty}
