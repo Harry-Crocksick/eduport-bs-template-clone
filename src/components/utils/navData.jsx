@@ -220,7 +220,7 @@ const popularCourses = [
     difficulty: "Beginner",
     title: "Graphic Designer Masterclass",
     description:
-      "Rooms oh fully taken by worse do Points afraid but may end Rooms...",
+      "Rooms oh fully taken by worse do Points afraid but may end Room",
     rating: 4.5,
     duration: "9h 56m",
     lectures: "65 lectures",
@@ -231,7 +231,7 @@ const popularCourses = [
     difficulty: "Beginner",
     title: "Create a Design System in Figma",
     description:
-      "Rooms oh fully taken by worse do. Points afraid but may end afraid but...",
+      "Rooms oh fully taken by worse do. Points afraid but may end afraid",
     rating: 4.5,
     duration: "5h 56m",
     lectures: "32 lectures",
