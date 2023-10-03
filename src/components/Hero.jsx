@@ -1,6 +1,6 @@
 export default function Hero() {
-    return (
-        <section className="relative w-full mt-10">
+  return (
+    <section className="relative w-full mt-10">
       <span className="hidden lg:block absolute top-1/2 right-0 -mr-10">
         <svg className="fill-amber-500/30 rotate-[186deg]">
           <path d="m35.4 54.2c0 0.6 0 1.1-0.1 1.7-0.9 9.3-9.2 16.1-18.5 15.1-4.5-0.4-8.5-2.6-11.4-6.1-2.8-3.5-4.2-7.9-3.7-12.4 0.9-9.3 9.2-16.1 18.5-15.1 4.5 0.4 8.5 2.6 11.4 6.1 2.4 3 3.8 6.8 3.8 10.7zm-33.4 0c0 3.8 1.3 7.5 3.8 10.4 2.8 3.4 6.8 5.5 11.2 6 9.1 0.9 17.2-5.8 18.1-14.8 0.4-4.4-0.9-8.7-3.7-12.1s-6.8-5.5-11.2-6c-9.2-0.8-17.3 5.8-18.2 14.9v1.6z"></path>
@@ -339,5 +339,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-    );
+  );
 }
