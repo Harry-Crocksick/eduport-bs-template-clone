@@ -44,6 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.30"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:18.2.0"],\
+            ["swiper", "npm:10.3.1"],\
             ["tailwindcss", "npm:3.3.3"],\
             ["vite", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:4.4.9"]\
           ],\
@@ -1649,6 +1650,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.30"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:18.2.0"],\
+            ["swiper", "npm:10.3.1"],\
             ["tailwindcss", "npm:3.3.3"],\
             ["vite", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:4.4.9"]\
           ],\
@@ -4397,6 +4399,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-53b1e247e6.zip/node_modules/supports-preserve-symlinks-flag/",\
           "packageDependencies": [\
             ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["swiper", [\
+        ["npm:10.3.1", {\
+          "packageLocation": "./.yarn/cache/swiper-npm-10.3.1-76fd5fe27f-9a785930ca.zip/node_modules/swiper/",\
+          "packageDependencies": [\
+            ["swiper", "npm:10.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\

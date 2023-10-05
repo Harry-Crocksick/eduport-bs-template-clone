@@ -1,13 +1,5 @@
 import { useState } from "react";
-import { popularCourses } from "./utils/navData";
-
-const navLinks = [
-  "Web Design",
-  "Development",
-  "Graphic Design",
-  "Marketing",
-  "Finance",
-];
+import { navLinks, popularCourses } from "./utils/courseData";
 
 export default function Courses() {
   const [active, isActive] = useState(navLinks[0]);

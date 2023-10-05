@@ -4,6 +4,7 @@ import {
   Accomplishment,
   Courses,
   Invitation,
+  Trending,
   Footer,
 } from "./components/Index";
 
@@ -15,6 +16,7 @@ function App() {
       <Accomplishment />
       <Courses />
       <Invitation />
+      <Trending />
       <Footer />
     </>
   );
