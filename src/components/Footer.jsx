@@ -11,7 +11,7 @@ function Links({ links }) {
         <li key={link}>
           <a
             href="/"
-            className="text-slate-400 text-sm font-normal leading-loose hover:text-cyan-400"
+            className="text-slate-500 dark:text-slate-400 text-sm font-normal leading-loose hover:text-cyan-400"
           >
             {link}
           </a>
@@ -42,7 +42,7 @@ export default function Footer() {
                 className="w-36 h-auto hidden dark:block"
               />
             </div>
-            <p className="text-slate-400 text-sm font-normal">
+            <p className="dark:text-slate-400 text-slate-500 text-sm font-normal">
               Eduport education theme, built specifically for the education
               centers which is dedicated to teaching and involve learners.
             </p>
@@ -97,14 +97,20 @@ export default function Footer() {
           {/* contact section starts */}
           <div className="col-span-full sm:col-span-2 lg:col-span-3">
             <h3 className="text-xl dark:text-white font-semibold">Contact</h3>
-            <address className="mt-6 mb-4">
+            <address className="mt-6 mb-4 not-italic">
               <p className="dark:text-white">
-                <span className="text-slate-400">Toll free: </span>+123 456 7890
+                <span className="text-slate-500 dark:text-slate-400">
+                  Toll free:{" "}
+                </span>
+                +123 456 7890
                 <br />
                 (9:AM to 8:PM IST)
               </p>
               <p className="dark:text-white">
-                <span className="text-slate-400">Email: </span>example@gmail.com
+                <span className="text-slate-500 dark:text-slate-400">
+                  Email:{" "}
+                </span>
+                example@gmail.com
               </p>
             </address>
             <ul className="flex gap-2 flex-wrap">
@@ -134,7 +140,7 @@ export default function Footer() {
         </div>
         {/* upper footer section ends */}
         <div className="pt-4 flex gap-4 flex-col md:flex-row justify-between">
-          <p className="text-slate-400">
+          <p className="text-slate-500 dark:text-slate-400">
             Copyrights &copy;{new Date().getFullYear()}{" "}
             <a
               href="https://www.webestica.com"
@@ -148,7 +154,7 @@ export default function Footer() {
               Marn Tet Zan
             </a>
           </p>
-          <ul className="flex space-x-4 text-sm sm:[&>li>a]:text-base [&>li>a]:text-slate-400">
+          <ul className="flex space-x-4 text-sm sm:[&>li>a]:text-base [&>li>a]:text-slate-500 dark:[&>li>a]:text-slate-400">
             <li>
               <a>
                 <i className="fa-solid fa-globe fa-fw"></i>

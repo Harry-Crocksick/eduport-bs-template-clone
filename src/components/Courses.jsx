@@ -13,7 +13,7 @@ export default function Courses() {
     <section className="w-full mt-20">
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center">
-          <h1 className="text-5xl font-semibold mb-4 dark:text-white">
+          <h1 className="text-3xl mdx:text-5xl font-semibold mb-4 dark:text-white">
             Most Popular Courses
           </h1>
           <p className="font-medium text-slate-400">
