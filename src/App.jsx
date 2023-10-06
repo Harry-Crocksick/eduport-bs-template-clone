@@ -12,14 +12,14 @@ import {
 function App() {
   return (
     <>
-      {/* <Navigation />
+      <Navigation />
       <Hero />
       <Accomplishment />
       <Courses />
       <Invitation />
-      <Trending /> */}
+      <Trending />
       <Feedback />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
