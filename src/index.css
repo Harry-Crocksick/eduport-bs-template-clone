@@ -17,4 +17,11 @@
     background-size: cover;
     background-position: center;
   }
+  .bg-image-pattern-two {
+    background-image: url("https://eduport.webestica.com/assets/images/pattern/02.png");
+    background-color: theme(backgroundColor[blue].600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }

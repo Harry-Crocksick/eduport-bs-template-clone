@@ -1,7 +1,7 @@
 export default function Invitation() {
   return (
     <section className="mt-20">
-      <div className="container-box max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl mx-auto px-4">
         <div className="relative flex justify-center items-center bg-cyan-500/70 rounded-lg">
           <figure className="fill-white/20 absolute left-5 z-10">
             <svg width="141px" height="141px">

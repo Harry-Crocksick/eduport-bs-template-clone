@@ -37,13 +37,13 @@ export default function Courses() {
             </li>
           ))}
         </ul>
-        <div className="big-container mt-5 grid grid-cols-4 lg:grid-cols-8 gap-y-8">
+        <div className="mt-5 grid grid-cols-4 lg:grid-cols-8 gap-y-8">
           {coursesToDisplay.map((course, idx) => (
             <div
               key={course.title}
-              className="card-container col-span-full sm:col-span-2 px-4 min-h-full"
+              className="col-span-full sm:col-span-2 px-4 min-h-full"
             >
-              <div className="card flex flex-col h-full rounded-lg dark:shadow-none shadow-2xl overflow-hidden">
+              <div className="flex flex-col h-full rounded-lg dark:shadow-none shadow-2xl overflow-hidden">
                 {/* image section starts */}
                 <div className="shrink-0">
                   <img
@@ -54,7 +54,7 @@ export default function Courses() {
                 </div>
                 {/* image section ends */}
                 {/* context section starts */}
-                <div className="content-container p-4 flex-auto bg-white dark:bg-[#222]">
+                <div className="p-4 flex-auto bg-white dark:bg-[#222]">
                   <div className="flex items-center justify-between">
                     <span
                       className={

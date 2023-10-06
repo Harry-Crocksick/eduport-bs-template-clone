@@ -9,7 +9,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 export default function Trending() {
   return (
     <section className="my-20">
-      <div className="container-box max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
@@ -37,9 +37,9 @@ export default function Trending() {
               spaceBetween: 30,
             },
           }}
-          className="group flex flex-col h-auto relative mySwiper p-4"
+          className="mySwiper group flex flex-col h-auto relative p-4"
         >
-          <span className="swiper-button-next after:content-[''] group-hover:translate-x-0 translate-x-[150%] transition-transform duration-300 ease-out text-white p-6 rounded-full bg-black/10 backdrop-blur-sm">
+          <span className="swiper-button-next after:content-[''] group-hover:translate-x-0 translate-x-[150%] transition-transform duration-300 ease-out text-white p-6 rounded-full bg-black/30 backdrop-blur-sm">
             <i className="fa-solid fa-chevron-right fa-fw fa-lg font-semibold"></i>
           </span>
           <span className="swiper-button-prev after:content-[''] group-hover:translate-x-0 -translate-x-[150%] transition-transform duration-300 ease-out text-white p-6 rounded-full bg-black/10 backdrop-blur-sm">
@@ -48,7 +48,7 @@ export default function Trending() {
           {trendingCourses.map((course, idx) => (
             <SwiperSlide
               key={idx}
-              className="group/card flex flex-col ring-1 ring-slate-900/10 rounded-lg h-auto"
+              className="group/card flex flex-col ring-1 ring-slate-900/10 rounded-lg h-auto overflow-hidden"
             >
               <div className="shrink-0">
                 <img

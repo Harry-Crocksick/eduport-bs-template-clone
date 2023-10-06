@@ -4,14 +4,16 @@ import Accomplishment from "./Accomplishment";
 import Courses from "./Courses";
 import Invitation from "./Invitation";
 import Trending from "./Trending";
+import Feedback from "./Feedback";
 import Footer from "./Footer";
 
 export {
-  Footer,
   Hero,
   Navigation,
   Accomplishment,
   Courses,
   Invitation,
   Trending,
+  Feedback,
+  Footer,
 };

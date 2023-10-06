@@ -1,8 +1,8 @@
 export default function Accomplishment() {
   return (
     <section className="w-full mt-20">
-      <div className="container-box max-w-screen-xl mx-auto px-4">
-        <div className="card-container grid grid-cols-4 mdx:grid-cols-8 gap-4">
+      <div className="max-w-screen-xl mx-auto px-4">
+        <div className="grid grid-cols-4 mdx:grid-cols-8 gap-4">
           <div className="flex space-x-4 justify-center items-center basis-full col-span-full md:col-span-2 bg-yellow-500/20 py-6 rounded-lg">
             <span>
               <i className="fas fa-tv fa-fw text-6xl text-yellow-500"></i>
