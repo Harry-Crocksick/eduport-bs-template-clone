@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative w-full mt-10">
+    <section className="relative w-full mt-10 overflow-x-hidden">
       <span className="hidden lg:block absolute top-1/2 right-0 -mr-10">
         <svg className="fill-amber-500/30 rotate-[186deg]">
           <path d="m35.4 54.2c0 0.6 0 1.1-0.1 1.7-0.9 9.3-9.2 16.1-18.5 15.1-4.5-0.4-8.5-2.6-11.4-6.1-2.8-3.5-4.2-7.9-3.7-12.4 0.9-9.3 9.2-16.1 18.5-15.1 4.5 0.4 8.5 2.6 11.4 6.1 2.4 3 3.8 6.8 3.8 10.7zm-33.4 0c0 3.8 1.3 7.5 3.8 10.4 2.8 3.4 6.8 5.5 11.2 6 9.1 0.9 17.2-5.8 18.1-14.8 0.4-4.4-0.9-8.7-3.7-12.1s-6.8-5.5-11.2-6c-9.2-0.8-17.3 5.8-18.2 14.9v1.6z"></path>
@@ -147,7 +147,7 @@ export default function Hero() {
         <div className="flex flex-wrap gap-y-28 items-center">
           {/* left section starts */}
           <div className="relative text-center basis-full md:text-left mdx:basis-[41.66%] xl:basis-1/2 pr-4">
-            <figure className="fill-emerald-500 absolute right-60 -top-4">
+            <figure className="fill-emerald-500 absolute right-60 -top-4 hidden mdx:block">
               <svg width="22px" height="21px">
                 <path d="M10.717,4.757 L14.440,-0.001 L14.215,6.023 L20.142,4.757 L16.076,9.228 L21.435,12.046 L15.430,12.873 L17.713,18.457 L12.579,15.252 L10.717,20.988 L8.856,15.252 L3.722,18.457 L6.005,12.873 L-0.000,12.046 L5.359,9.228 L1.292,4.757 L7.220,6.023 L6.995,-0.001 L10.717,4.757 Z"></path>
               </svg>

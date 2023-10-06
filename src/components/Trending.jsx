@@ -37,7 +37,7 @@ export default function Trending() {
               spaceBetween: 30,
             },
           }}
-          className="group relative mySwiper p-4"
+          className="group flex flex-col h-auto relative mySwiper p-4"
         >
           <span className="swiper-button-next after:content-[''] group-hover:translate-x-0 translate-x-[150%] transition-transform duration-300 ease-out text-white p-6 rounded-full bg-black/10 backdrop-blur-sm">
             <i className="fa-solid fa-chevron-right fa-fw fa-lg font-semibold"></i>
@@ -48,7 +48,7 @@ export default function Trending() {
           {trendingCourses.map((course, idx) => (
             <SwiperSlide
               key={idx}
-              className="group w-full h-full ring-1 ring-slate-900/10 rounded-lg overflow-hidden"
+              className="group/card flex flex-col ring-1 ring-slate-900/10 rounded-lg h-auto"
             >
               <div className="shrink-0">
                 <img
@@ -58,14 +58,15 @@ export default function Trending() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="flex flex-col gap-3 p-4 bg-white dark:bg-[#222]">
+              {/* Tag section starts */}
+              <div className="flex-auto p-4 bg-white dark:bg-[#222]">
                 <div className="flex items-center justify-between dark:text-white">
                   <div className="flex items-center space-x-2">
                     <span
                       className={
                         course.tags === "Digital" ||
                         course.tags === "Development"
-                          ? "bg-blue-100 text-blue-600 font-medium text-sm px-1 py-0.5 rounded-md"
+                          ? "bg-blue-500/20 text-blue-500 font-medium text-sm px-1 py-0.5 rounded-md"
                           : ""
                       }
                     >
@@ -79,11 +80,13 @@ export default function Trending() {
                     <i className="fa-regular fa-bookmark fa-fw fa-md"></i>
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold dark:text-white">
+                {/* Tags section ends */}
+                <h3 className="text-xl font-semibold dark:text-white my-3">
                   {course.title}
                 </h3>
-                <div className="flex items-center flex-auto justify-between">
-                  <div className="flex items-center space-x-1">
+                {/* Course section starts */}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-1 mb-2">
                     <span className="dark:text-white">{course.rating}</span>
                     <span>
                       <i className="fa-solid fa-star fa-fw text-yellow-400"></i>
@@ -97,6 +100,8 @@ export default function Trending() {
                     </span>
                   </div>
                 </div>
+                {/* Course section ends */}
+                {/* Course duration starts */}
                 <div className="flex items-center space-x-4">
                   <span className="dark:text-white">
                     <i className="fa-regular fa-clock fa-fw text-rose-600"></i>{" "}
@@ -107,26 +112,29 @@ export default function Trending() {
                     {course.lectures} lectures
                   </span>
                 </div>
-                <hr />
-                <div className="flex items-center justify-between py-2">
-                  <div className="flex items-center space-x-2 dark:text-white">
-                    <img
-                      src={course.tutorImage}
-                      alt={course.tutor}
-                      className="w-10 h-10 rounded-md"
-                      loading="lazy"
-                    />
-                    <span>{course.tutor}</span>
-                  </div>
-                  <span className="group-hover:hidden block text-2xl text-emerald-500 font-semibold">
-                    {course.fee}
-                  </span>
-                  <div className="hidden group-hover:flex items-center space-x-2 px-3 py-2 rounded-md bg-emerald-500/10 text-emerald-500">
-                    <i className="fa-solid fa-cart-shopping fa-fw"></i>
-                    <span className="font-medium">Add to cart</span>
-                  </div>
+                {/* Course duration ends */}
+              </div>
+              <hr className="mx-4" />
+              {/* Tutor section starts */}
+              <div className="flex items-center justify-between py-3 px-4 dark:bg-[#222]">
+                <div className="flex items-center space-x-2 dark:text-white">
+                  <img
+                    src={course.tutorImage}
+                    alt={course.tutor}
+                    className="w-10 h-10 rounded-md"
+                    loading="lazy"
+                  />
+                  <span>{course.tutor}</span>
+                </div>
+                <span className="group-hover/card:hidden block text-2xl text-emerald-500 font-semibold">
+                  {course.fee}
+                </span>
+                <div className="hidden group-hover/card:flex items-center space-x-2 px-3 py-2 rounded-md bg-emerald-500/10 text-emerald-500">
+                  <i className="fa-solid fa-cart-shopping fa-fw"></i>
+                  <span className="font-medium">Add to cart</span>
                 </div>
               </div>
+              {/* Tutor section ends */}
             </SwiperSlide>
           ))}
         </Swiper>

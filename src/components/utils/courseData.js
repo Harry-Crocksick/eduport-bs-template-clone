@@ -127,7 +127,7 @@ const trendingCourses = [
     thumbnail:
       "https://eduport.webestica.com/assets/images/courses/4by3/17.jpg",
     difficulty: "All level",
-    title: "Complete Digital Marketing Course - 8 courses in 1",
+    title: "The Complete Digital Marketing Course - 8 courses in 1",
     rating: 4.5,
     raters: 3500,
     duration: "12h 45m",
@@ -187,7 +187,7 @@ const trendingCourses = [
     thumbnail:
       "https://eduport.webestica.com/assets/images/courses/4by3/17.jpg",
     difficulty: "All level",
-    title: "Complete Digital Marketing Course - 8 courses in 1",
+    title: "The Complete Digital Marketing Course - 8 courses in 1",
     rating: 4.5,
     raters: 3500,
     duration: "12h 45m",
