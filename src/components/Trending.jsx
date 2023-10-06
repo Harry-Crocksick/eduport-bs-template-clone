@@ -37,10 +37,14 @@ export default function Trending() {
               spaceBetween: 30,
             },
           }}
-          className="relative mySwiper p-4"
+          className="group relative mySwiper p-4"
         >
-          <span className="swiper-button-next text-white p-6 rounded-full bg-black/10 backdrop-blur-sm"></span>
-          <span className="swiper-button-prev text-white p-6 rounded-full bg-black/10 backdrop-blur-sm"></span>
+          <span className="swiper-button-next after:content-[''] group-hover:translate-x-0 translate-x-[150%] transition-transform duration-300 ease-out text-white p-6 rounded-full bg-black/10 backdrop-blur-sm">
+            <i className="fa-solid fa-chevron-right fa-fw fa-lg font-semibold"></i>
+          </span>
+          <span className="swiper-button-prev after:content-[''] group-hover:translate-x-0 -translate-x-[150%] transition-transform duration-300 ease-out text-white p-6 rounded-full bg-black/10 backdrop-blur-sm">
+            <i className="fa-solid fa-chevron-left fa-fw fa-lg font-semibold"></i>
+          </span>
           {trendingCourses.map((course, idx) => (
             <SwiperSlide
               key={idx}
