@@ -154,14 +154,14 @@ export default function Footer() {
               Marn Tet Zan
             </a>
           </p>
-          <ul className="flex space-x-4 text-sm sm:[&>li>a]:text-base [&>li>a]:text-slate-500 dark:[&>li>a]:text-slate-400">
+          <ul className="flex space-x-4 text-[13px] sm:text-base text-slate-500 dark:text-slate-400">
             <li>
               <a>
                 <i className="fa-solid fa-globe fa-fw"></i>
                 <select
                   name="smt"
                   id="something"
-                  className="bg-transparent ml-2"
+                  className="bg-transparent sm:ml-2"
                 >
                   <option>Language</option>
                   <option value="">English</option>
