@@ -8,7 +8,7 @@ export default function Feedback() {
             <div className="flex gap-8">
               {/* left section starts */}
               <div className="relative basis-full md:basis-[58%] mt-12">
-                <figure class="fill-rose-600/20 absolute -top-[105px] -left-[105px] mb-3">
+                <figure className="fill-rose-600/20 absolute -top-[105px] -left-[105px] mb-3">
                   <svg width="210px" height="210px">
                     <path d="M210.030,105.011 C210.030,163.014 163.010,210.029 105.012,210.029 C47.013,210.029 -0.005,163.014 -0.005,105.011 C-0.005,47.015 47.013,-0.004 105.012,-0.004 C163.010,-0.004 210.030,47.015 210.030,105.011 Z"></path>
                   </svg>
@@ -140,7 +140,7 @@ export default function Feedback() {
             <div className="flex flex-wrap md:flex-nowrap gap-8">
               {/* bottom left section starts */}
               <div className="relative hidden md:block md:basis-[58%] mt-12">
-                <figure class="fill-rose-500 absolute -top-20 left-3/4">
+                <figure className="fill-rose-500 absolute -top-20 left-3/4">
                   <svg enableBackground="new 0 0 160.7 159.8" height="180px">
                     <path d="m153.2 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z"></path>
                     <path d="m116.4 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z"></path>
