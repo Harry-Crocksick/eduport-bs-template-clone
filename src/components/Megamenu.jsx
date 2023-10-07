@@ -102,7 +102,7 @@ export default function Megamenu() {
           {/* download icons section ends */}
         </div>
         {/* Download section ends */}
-        <div className="flex items-center space-x-4 col-span-full bg-emerald-200 p-4 rounded-md border border-emerald-300">
+        <div className="flex items-center space-x-4 col-span-full bg-emerald-500/20 p-4 rounded-md border border-emerald-400">
           <div className="shrink-0">
             <img
               src="https://eduport.webestica.com/assets/images/avatar/09.jpg"
@@ -110,9 +110,9 @@ export default function Megamenu() {
               className="w-12 h-auto rounded-full"
             />
           </div>
-          <p className="text-emerald-600">
+          <p className="text-emerald-700 dark:text-emerald-400">
             The personality development class starts at 2:00 pm, click to{" "}
-            <a href="/" className="font-semibold text-emerald-600">
+            <a href="/" className="font-semibold">
               Join Now
             </a>
           </p>
