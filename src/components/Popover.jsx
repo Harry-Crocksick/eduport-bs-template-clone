@@ -20,7 +20,7 @@ export default function Customize() {
         />
       </Popover.Button>
 
-      <Popover.Panel className="absolute w-[270px] right-0 ring-1 ring-slate-900/5 rounded-md dark:bg-[#0F0F10] z-30">
+      <Popover.Panel className="absolute w-[270px] right-0 ring-1 ring-slate-900/5 rounded-md bg-white dark:bg-[#0F0F10] z-30">
         <div className="p-4 shadow-lg">
           <div className="flex items-center space-x-3 max-w-max mx-auto">
             <div className="shrink-0">
