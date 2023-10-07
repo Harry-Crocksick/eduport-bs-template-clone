@@ -231,6 +231,16 @@ export default function Hero() {
           {/* left section ends */}
           {/* right sectino starts */}
           <div className="relative flex-shrink-0 basis-full mdx:basis-[58.3333%] xl:basis-1/2 text-center">
+            <figure className="absolute bottom-0 left-1/2 -translate-x-1/2">
+              <svg
+                width="550px"
+                height="538px"
+                viewBox="0 0 554 544"
+                className="fill-yellow-400"
+              >
+                <path d="M423.3,77.2c49.5,32.5,100.4,67.2,118.4,114.5s3.5,107.1-15.4,165.7c-18.7,58.6-41.8,116.1-84,148.6 c-42.5,32.8-104.2,40.2-163.8,37.3c-59.5-3.2-116.8-17.1-164.7-47.9c-48.3-30.6-87.2-78.2-102-131.6C-3,310.5,6.6,251,25.3,194.7 C43.6,138,70.7,84.3,114.1,49.5C157.2,14.8,216.7-1,270.8,6.4C324.8,14.2,373.4,44.7,423.3,77.2z"></path>
+              </svg>
+            </figure>
             <div className="hidden md:block absolute top-32 right-0 p-4 rounded-lg bg-image-pattern z-0">
               <p className="text-white font-medium mb-2">
                 Our daily new students
@@ -299,21 +309,13 @@ export default function Hero() {
                 alt="Figma"
               />
             </figure>
-            <figure className="absolute bottom-0 left-1/2 -translate-x-1/2 -z-10">
-              <svg width="550px" height="538px" viewBox="0 0 554 544">
-                <path
-                  className="fill-yellow-400"
-                  d="M423.3,77.2c49.5,32.5,100.4,67.2,118.4,114.5s3.5,107.1-15.4,165.7c-18.7,58.6-41.8,116.1-84,148.6 c-42.5,32.8-104.2,40.2-163.8,37.3c-59.5-3.2-116.8-17.1-164.7-47.9c-48.3-30.6-87.2-78.2-102-131.6C-3,310.5,6.6,251,25.3,194.7 C43.6,138,70.7,84.3,114.1,49.5C157.2,14.8,216.7-1,270.8,6.4C324.8,14.2,373.4,44.7,423.3,77.2z"
-                ></path>
-              </svg>
-            </figure>
-            <div className="z-0">
+            <figure className="isolate">
               <img
                 src="https://eduport.webestica.com/assets/images/element/07.png"
                 alt="Model"
                 className="mx-auto pointer-events-nones"
               />
-            </div>
+            </figure>
             <div className="hidden absolute left-16 bottom-14 mdx:flex justify-center items-center px-3 py-4 backdrop-blur-sm shadow-lg border border-white rounded-md z-0">
               <div className="flex items-center space-x-2">
                 <span className="bg-yellow-300 rounded-full p-3">
