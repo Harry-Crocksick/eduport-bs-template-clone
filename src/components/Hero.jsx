@@ -160,8 +160,7 @@ export default function Hero() {
             <h1 className="text-4xl mdx:text-5xl lg:text-[56px] leading-snug font-semibold dark:text-white">
               Limitless learning at your{" "}
               <span className="relative">
-                fingertips
-                <span className="absolute inset-0 -z-10">
+                <span className="absolute inset-0">
                   <svg width="300px" height="62.1px" viewBox="0 0 366 62.1">
                     <path
                       className="fill-yellow-400"
@@ -169,6 +168,7 @@ export default function Hero() {
                     ></path>
                   </svg>
                 </span>
+                <span className="isolate">fingertips</span>
               </span>
             </h1>
             <p className="text-slate-500 font-medium mt-5">
@@ -195,7 +195,7 @@ export default function Hero() {
                 Get membership
               </li>
             </ul>
-            <div className="btn-group mt-8 flex flex-wrap justify-center md:justify-start items-center gap-4">
+            <div className="mt-8 flex flex-wrap justify-center md:justify-start items-center gap-8 sm:gap-4">
               <div className="shrink-0">
                 <a
                   href="/"
@@ -303,7 +303,7 @@ export default function Hero() {
                 alt="Atom"
               />
             </figure>
-            <figure className="absolute top-80 right-2 p-3 rounded-md bg-white shadow-xl max-w-max z-0">
+            <figure className="absolute top-80 right-2 p-3 rounded-md bg-white shadow-xl max-w-max z-10">
               <img
                 src="https://eduport.webestica.com/assets/images/client/figma.svg"
                 alt="Figma"
