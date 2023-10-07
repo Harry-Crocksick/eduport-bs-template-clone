@@ -9,6 +9,7 @@ import {
   more,
   devSub,
 } from "./utils/navData";
+import Customize from "./Popover";
 
 export function Link({ link }) {
   return (
@@ -185,13 +186,7 @@ export default function Navigation() {
         <div className="lg:hidden">
           <i className="fa-solid fa-bars text-slate-400 fa-xl fa-fw"></i>
         </div>
-        <div className="shrink-0">
-          <img
-            src="https://eduport.webestica.com/assets/images/avatar/01.jpg"
-            alt="Avatar"
-            className="w-12 h-12 rounded-full"
-          />
-        </div>
+        <Customize />
       </div>
     </nav>
   );

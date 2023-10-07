@@ -231,7 +231,7 @@ export default function Hero() {
           {/* left section ends */}
           {/* right sectino starts */}
           <div className="relative flex-shrink-0 basis-full mdx:basis-[58.3333%] xl:basis-1/2 text-center">
-            <div className="hidden md:block absolute top-32 right-0 p-4 rounded-lg bg-image-pattern">
+            <div className="hidden md:block absolute top-32 right-0 p-4 rounded-lg bg-image-pattern z-10">
               <p className="text-white font-medium mb-2">
                 Our daily new students
               </p>
@@ -293,13 +293,13 @@ export default function Hero() {
                 alt="Atom"
               />
             </figure>
-            <figure className="absolute top-80 right-2 p-3 rounded-md bg-white shadow-xl max-w-max">
+            <figure className="absolute top-80 right-2 p-3 rounded-md bg-white shadow-xl max-w-max z-30">
               <img
                 src="https://eduport.webestica.com/assets/images/client/figma.svg"
                 alt="Figma"
               />
             </figure>
-            <figure className="absolute bottom-0 left-1/2 -translate-x-1/2 -z-10">
+            <figure className="absolute bottom-0 left-1/2 -translate-x-1/2 z-0">
               <svg width="550px" height="538px" viewBox="0 0 554 544">
                 <path
                   className="fill-yellow-400"
@@ -307,11 +307,11 @@ export default function Hero() {
                 ></path>
               </svg>
             </figure>
-            <div className="z-50">
+            <div className="isolate">
               <img
                 src="https://eduport.webestica.com/assets/images/element/07.png"
                 alt="Model"
-                className="mx-auto pointer-events-none"
+                className="mx-auto pointer-events-none z-20"
               />
             </div>
             <div className="hidden absolute left-16 bottom-14 mdx:flex justify-center items-center px-3 py-4 backdrop-blur-sm shadow-lg border border-white rounded-md z-0">

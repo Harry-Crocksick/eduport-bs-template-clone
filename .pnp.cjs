@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@headlessui/react", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:1.7.17"],\
             ["@types/react", "npm:18.2.23"],\
             ["@types/react-dom", "npm:18.2.8"],\
             ["@vitejs/plugin-react", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:4.1.0"],\
@@ -650,6 +651,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@eslint-js-npm-8.50.0-ee6c09328d-302478f2ac.zip/node_modules/@eslint/js/",\
           "packageDependencies": [\
             ["@eslint/js", "npm:8.50.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@headlessui/react", [\
+        ["npm:1.7.17", {\
+          "packageLocation": "./.yarn/cache/@headlessui-react-npm-1.7.17-c3f120aed0-0cdb67747e.zip/node_modules/@headlessui/react/",\
+          "packageDependencies": [\
+            ["@headlessui/react", "npm:1.7.17"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:1.7.17", {\
+          "packageLocation": "./.yarn/__virtual__/@headlessui-react-virtual-fb4001a0fd/0/cache/@headlessui-react-npm-1.7.17-c3f120aed0-0cdb67747e.zip/node_modules/@headlessui/react/",\
+          "packageDependencies": [\
+            ["@headlessui/react", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:1.7.17"],\
+            ["@types/react", "npm:18.2.23"],\
+            ["@types/react-dom", "npm:18.2.8"],\
+            ["client-only", "npm:0.0.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1415,6 +1443,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["client-only", [\
+        ["npm:0.0.1", {\
+          "packageLocation": "./.yarn/cache/client-only-npm-0.0.1-07d3e9505c-0c16bf660d.zip/node_modules/client-only/",\
+          "packageDependencies": [\
+            ["client-only", "npm:0.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["color-convert", [\
         ["npm:1.9.3", {\
           "packageLocation": "./.yarn/cache/color-convert-npm-1.9.3-1fe690075e-fd7a64a17c.zip/node_modules/color-convert/",\
@@ -1639,6 +1676,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["eduport", "workspace:."],\
+            ["@headlessui/react", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:1.7.17"],\
             ["@types/react", "npm:18.2.23"],\
             ["@types/react-dom", "npm:18.2.8"],\
             ["@vitejs/plugin-react", "virtual:c5669e888c3d124059084afbb478e51f4575a2b3830dd466c315fddd80cc622496a31a3e6155bf9e5fc019b01c4b9a13a05cd70ca4c3f8e396637cc3583c7cc8#npm:4.1.0"],\
