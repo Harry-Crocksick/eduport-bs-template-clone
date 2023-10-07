@@ -4,8 +4,8 @@ export default function Accomplishment() {
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-4 mdx:grid-cols-8 gap-4">
           <div className="flex space-x-4 justify-center items-center basis-full col-span-full md:col-span-2 bg-yellow-500/20 py-6 rounded-lg">
-            <span>
-              <i className="fas fa-tv fa-fw text-6xl text-yellow-500"></i>
+            <span className="text-center">
+              <i className="fas fa-tv fa-fw text-5xl text-yellow-500"></i>
             </span>
             <div>
               <h3 className="font-semibold dark:text-white text-xl">10K</h3>
@@ -13,8 +13,8 @@ export default function Accomplishment() {
             </div>
           </div>
           <div className="flex space-x-4 justify-center items-center basis-full col-span-full md:col-span-2 py-6 rounded-lg bg-slate-500/20">
-            <span>
-              <i className="fas fa-user-tie fa-fw text-6xl text-slate-700"></i>
+            <span className="text-center">
+              <i className="fas fa-user-tie fa-fw text-5xl text-slate-700"></i>
             </span>
             <div>
               <h3 className="font-semibold dark:text-white text-xl">200+</h3>
@@ -22,8 +22,8 @@ export default function Accomplishment() {
             </div>
           </div>
           <div className="flex space-x-4 justify-center items-center basis-full col-span-full md:col-span-2 py-6 rounded-lg bg-indigo-500/20">
-            <span>
-              <i className="fas fa-user-graduate fa-fw text-6xl text-indigo-900"></i>
+            <span className="text-center">
+              <i className="fas fa-user-graduate fa-fw text-5xl text-indigo-900"></i>
             </span>
             <div>
               <h3 className="font-semibold dark:text-white text-xl">60K+</h3>
@@ -31,8 +31,8 @@ export default function Accomplishment() {
             </div>
           </div>
           <div className="flex space-x-4 justify-center items-center basis-full col-span-full md:col-span-2 py-6 rounded-lg bg-emerald-500/20">
-            <span>
-              <i className="fa-solid fa-circle-check fa-fw text-6xl text-emerald-700"></i>
+            <span className="text-center">
+              <i className="fa-solid fa-circle-check fa-fw text-5xl text-emerald-700"></i>
             </span>
             <div>
               <h3 className="font-semibold dark:text-white text-xl">6K+</h3>

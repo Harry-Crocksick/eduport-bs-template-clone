@@ -23,7 +23,7 @@ function Links({ links }) {
 
 export default function Footer() {
   return (
-    <footer className="my-10 dark:bg-[#222529]">
+    <footer className="mt-10 dark:bg-[#222529]">
       <section className="max-w-screen-xl mx-auto flex flex-col divide-y divide-slate-100 px-4 py-8">
         {/* upper footer section starts */}
         <div className="grid grid-cols-4 lg:grid-cols-12 gap-4 pb-4">
@@ -144,13 +144,18 @@ export default function Footer() {
             Copyrights &copy;{new Date().getFullYear()}{" "}
             <a
               href="https://www.webestica.com"
+              target="_blank"
               className="text-indigo-600 font-semibold"
             >
               Webestica
             </a>
             . All rights reserved. <br />
             Built by{" "}
-            <a href="/" className="text-cyan-400 font-semibold">
+            <a
+              href="https://www.facebook.com/james.christian.3914207"
+              target="_blank"
+              className="text-cyan-400 font-semibold"
+            >
               Marn Tet Zan
             </a>
           </p>
