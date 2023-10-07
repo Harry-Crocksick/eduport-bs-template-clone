@@ -114,7 +114,7 @@ export function Dropdown({ linkName }) {
 
 export default function Navigation() {
   return (
-    <nav className="flex justify-between items-center py-5 px-4 md:px-10 dark:bg-[#222529]">
+    <nav className="flex justify-between items-center py-5 px-4 md:px-10 dark:bg-[#222529] z-[9999]">
       <div className="flex items-center space-x-4">
         <div className="shrink-0">
           <img

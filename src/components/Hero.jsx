@@ -231,7 +231,7 @@ export default function Hero() {
           {/* left section ends */}
           {/* right sectino starts */}
           <div className="relative flex-shrink-0 basis-full mdx:basis-[58.3333%] xl:basis-1/2 text-center">
-            <div className="hidden md:block absolute top-32 right-0 p-4 rounded-lg bg-image-pattern z-10">
+            <div className="hidden md:block absolute top-32 right-0 p-4 rounded-lg bg-image-pattern z-0">
               <p className="text-white font-medium mb-2">
                 Our daily new students
               </p>
@@ -281,25 +281,25 @@ export default function Hero() {
                 <path d="m20.2 49.3c-0.1 0 0 0 0 0 0.1 0.2 0.1 0.3 0.1 0.4 0.1 0.3 0.2 0.6 0.4 0.9 0.3 0.7 0.5 1.5 0.7 2.3s0.2 1.7 0.3 2.5c0.1 0.7 0.1 1.6 0.5 2.2 0.4 0.7 1.6 0.1 1.1-0.7-0.2-0.3-0.2-0.6-0.2-1 0-0.5-0.1-0.9-0.1-1.4-0.1-0.9-0.2-1.8-0.4-2.7-0.2-0.8-0.5-1.5-0.8-2.3-0.2-0.5-0.3-1.2-0.8-1.4-0.3-0.1-0.7-0.1-0.9 0.2-0.3 0.4-0.3 0.9 0.1 1z"></path>
               </svg>
             </figure>
-            <figure className="absolute top-0 right-8 p-3 rounded-md bg-white shadow-xl max-w-max">
+            <figure className="absolute top-0 right-8 p-3 rounded-md bg-white shadow-xl max-w-max z-0">
               <img
                 src="https://eduport.webestica.com/assets/images/client/angular.svg"
                 alt="Angular"
               />
             </figure>
-            <figure className="hidden sm:block absolute top-44 p-3 rounded-md bg-white shadow-xl max-w-max">
+            <figure className="hidden sm:block absolute top-44 p-3 rounded-md bg-white shadow-xl max-w-max z-0">
               <img
                 src="https://eduport.webestica.com/assets/images/client/science.svg"
                 alt="Atom"
               />
             </figure>
-            <figure className="absolute top-80 right-2 p-3 rounded-md bg-white shadow-xl max-w-max z-30">
+            <figure className="absolute top-80 right-2 p-3 rounded-md bg-white shadow-xl max-w-max z-0">
               <img
                 src="https://eduport.webestica.com/assets/images/client/figma.svg"
                 alt="Figma"
               />
             </figure>
-            <figure className="absolute bottom-0 left-1/2 -translate-x-1/2 z-0">
+            <figure className="absolute bottom-0 left-1/2 -translate-x-1/2 -z-10">
               <svg width="550px" height="538px" viewBox="0 0 554 544">
                 <path
                   className="fill-yellow-400"
@@ -307,11 +307,11 @@ export default function Hero() {
                 ></path>
               </svg>
             </figure>
-            <div className="isolate">
+            <div className="z-0">
               <img
                 src="https://eduport.webestica.com/assets/images/element/07.png"
                 alt="Model"
-                className="mx-auto pointer-events-none z-20"
+                className="mx-auto pointer-events-nones"
               />
             </div>
             <div className="hidden absolute left-16 bottom-14 mdx:flex justify-center items-center px-3 py-4 backdrop-blur-sm shadow-lg border border-white rounded-md z-0">
