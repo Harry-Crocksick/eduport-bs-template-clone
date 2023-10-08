@@ -140,7 +140,7 @@ export default function Feedback() {
             <div className="flex flex-wrap md:flex-nowrap gap-8">
               {/* bottom left section starts */}
               <div className="relative hidden md:block md:basis-[58%] mt-12">
-                <figure className="fill-rose-500 absolute -top-20 left-3/4">
+                <figure className="fill-rose-500 absolute -top-20 left-[70%]">
                   <svg enableBackground="new 0 0 160.7 159.8" height="180px">
                     <path d="m153.2 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z"></path>
                     <path d="m116.4 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z"></path>

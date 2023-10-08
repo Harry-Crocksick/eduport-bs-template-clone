@@ -8,7 +8,6 @@ import {
   Feedback,
   Footer,
 } from "./components/Index";
-import Customize from "./components/Popover";
 
 function App() {
   return (

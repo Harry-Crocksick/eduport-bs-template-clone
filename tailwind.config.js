@@ -10,7 +10,11 @@ export default {
       xl: "1300px",
       "2xl": "1536px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        heebo: ["Heebo", "sans-serif"],
+      },
+    },
   },
   darkMode: "class",
   plugins: [],

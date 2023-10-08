@@ -160,7 +160,7 @@ export default function Hero() {
             <h1 className="text-4xl mdx:text-5xl lg:text-[56px] leading-snug font-semibold dark:text-white">
               Limitless learning at your{" "}
               <span className="relative">
-                <span className="absolute inset-0">
+                <span className="absolute inset-0 mdx:top-3">
                   <svg width="300px" height="62.1px" viewBox="0 0 366 62.1">
                     <path
                       className="fill-yellow-400"
@@ -313,7 +313,7 @@ export default function Hero() {
               <img
                 src="https://eduport.webestica.com/assets/images/element/07.png"
                 alt="Model"
-                className="mx-auto pointer-events-nones"
+                className="mx-auto pointer-events-none"
               />
             </figure>
             <div className="hidden absolute left-16 bottom-14 mdx:flex justify-center items-center px-3 py-4 backdrop-blur-sm shadow-lg border border-white rounded-md z-0">
