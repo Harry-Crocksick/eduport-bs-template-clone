@@ -303,7 +303,7 @@ export default function Hero() {
                 alt="Atom"
               />
             </figure>
-            <figure className="absolute top-80 right-2 p-3 rounded-md bg-white shadow-xl max-w-max z-10">
+            <figure className="absolute top-80 right-2 p-3 rounded-md bg-white shadow-xl max-w-max z-0">
               <img
                 src="https://eduport.webestica.com/assets/images/client/figma.svg"
                 alt="Figma"

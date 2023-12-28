@@ -126,10 +126,10 @@ export default function Trending() {
                   />
                   <span className="text-sm font-medium">{course.tutor}</span>
                 </div>
-                <span className="group-hover/card:hidden block text-2xl text-emerald-500 font-semibold">
+                <span className="group-hover/card:hidden block text-xl text-emerald-500 font-semibold">
                   {course.fee}
                 </span>
-                <div className="hidden group-hover/card:flex items-center space-x-2 px-0.5 sm:px-3 py-2 rounded-md bg-emerald-500/10 text-emerald-500">
+                <div className="hidden group-hover/card:flex items-center space-x-2 px-0.5 sm:px-3 py-1.5 rounded-md bg-emerald-500/10 text-emerald-500">
                   <i className="fa-solid fa-cart-shopping fa-fw fa-sm"></i>
                   <span className="font-medium text-sm">Add to cart</span>
                 </div>

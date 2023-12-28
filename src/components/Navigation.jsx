@@ -177,7 +177,7 @@ export default function Navigation() {
             name="text"
             id="text"
             placeholder="Search"
-            className="block w-full ring-1 ring-slate-100 dark:ring-1 dark:ring-slate-100/20 py-2 px-3 focus:ring-2 focus:ring-blue-400 outline-none rounded-md dark:bg-[#222]"
+            className="block w-full ring-2 ring-slate-200 dark:ring-2 dark:ring-slate-100/20 py-2 px-3 focus:ring-2 focus:ring-blue-400 outline-none rounded-md dark:bg-[#222] dark:text-white dark:focus:ring-2 dark:focus:ring-blue-400"
           />
           <span className="absolute top-1/2 -translate-y-1/2 right-2">
             <i className="fa-solid fa-magnifying-glass fa-fw text-slate-400"></i>
